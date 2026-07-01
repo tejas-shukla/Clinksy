@@ -1,7 +1,7 @@
 const faqs = [
   {
     q: "Is Clinksy free to use?",
-    a: "The assistant is free during our beta. We'll introduce a small monthly subscription for premium features later — anyone signed up to the early-access list gets a discount for life.",
+    a: "The guides are free, and always will be. Matching you with a solicitor, mortgage adviser, or surveyor is free too — anyone on the early-access list gets first access as features roll out.",
   },
   {
     q: "Is the advice actually good?",
@@ -9,15 +9,15 @@ const faqs = [
   },
   {
     q: "Is it just for first-time buyers?",
-    a: "We focus on first-time buyers because that's where the confusion is highest, but the assistant works for anyone moving home in the UK. Buy-to-let and shared ownership are coming soon.",
+    a: "We focus on first-time buyers because that's where the confusion is highest, but Clinksy works for anyone moving home in the UK. Buy-to-let and shared ownership are coming soon.",
   },
   {
     q: "What about my data?",
-    a: "Your conversations are private. We never sell your information, and we don't pass leads to estate agents or brokers without you explicitly asking us to.",
+    a: "Your details are private. We never sell your information, and we don't pass leads to estate agents or brokers without you explicitly asking us to.",
   },
   {
     q: "Are you regulated?",
-    a: "Clinksy is not a mortgage broker, solicitor, or financial advisor — we're an information assistant. When a question needs a regulated answer, we'll tell you that and help you brief the right professional.",
+    a: "Clinksy is not a mortgage broker, solicitor, or financial advisor — we're an information service that helps you find and brief the right regulated professional. When a question needs a regulated answer, we'll tell you.",
   },
   {
     q: "Which countries do you cover?",
