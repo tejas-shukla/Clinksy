@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-bone text-ink font-sans;
+  }
+
+  ::selection {
+    @apply bg-ink text-bone;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-10;
+  }
+
+  .container-prose {
+    @apply mx-auto w-full max-w-prose px-6 sm:px-10;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-ink/10;
+  }
+
+  /* B&O-style CTA: transparent outline, fills to solid ink on hover */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-ink/40 px-5 py-2.5 font-sans text-sm font-medium text-ink transition-colors duration-200;
+  }
+  .btn-ghost:hover {
+    @apply border-ink bg-ink text-bone;
+  }
+
+  .btn-solid {
+    @apply inline-flex items-center justify-center rounded-full bg-ink px-5 py-2.5 font-sans text-sm font-medium text-bone transition-colors duration-200;
+  }
+  .btn-solid:hover {
+    @apply bg-ink-700;
+  }
+
+  .eyebrow {
+    @apply font-sans text-[13px] font-medium uppercase tracking-[0.2em] text-accent-400;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Door key animation (Hero)
+   Key slides in and gives a small unlock jiggle.
+───────────────────────────────────────────────────────── */
+@keyframes door-key-enter {
+  0%   { transform: translate(280px, 250px) rotate(-50deg); opacity: 0; }
+  10%  { opacity: 1; }
+  40%  { transform: translate(202px, 230px) rotate(-14deg); opacity: 1; }
+  55%  { transform: translate(202px, 230px) rotate(-4deg); }
+  70%  { transform: translate(202px, 230px) rotate(-22deg); }
+  85%  { transform: translate(202px, 230px) rotate(-8deg); }
+  100% { transform: translate(200px, 230px) rotate(-14deg); }
+}
+
+.key-enter {
+  transform: translate(200px, 230px) rotate(-14deg);
+  transform-origin: 0 0;
+  transform-box: fill-box;
+  animation: door-key-enter 1.8s ease-out 0.9s both;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Dashboard section animations
+───────────────────────────────────────────────────────── */
+
+/* Cards and elements fade up when the section comes into view */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cost bar grows from 0 to target width */
+@keyframes grow-bar {
+  from { width: 0%; }
+  to   { width: var(--bar-pct, 50%); }
+}
+
+/* Phase circle pops in */
+@keyframes pop-in {
+  0%   { opacity: 0; transform: scale(0.4); }
+  70%  { transform: scale(1.12); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Active phase pulse ring */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(180, 130, 70, 0.35); }
+  70%  { box-shadow: 0 0 0 7px rgba(180, 130, 70, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(180, 130, 70, 0); }
+}
+
+/* Dashboard animation helper classes */
+.dash-animate {
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dash-animate.fade-up {
+  animation-name: fade-up;
+  animation-duration: 0.55s;
+}
+
+.dash-animate.pop-in {
+  animation-name: pop-in;
+  animation-duration: 0.45s;
+}
+
+.dash-animate.grow-bar {
+  animation-name: grow-bar;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When not yet visible, hold at start state */
+.dash-paused {
+  animation-play-state: paused;
+}
+
+.dash-running {
+  animation-play-state: running;
+}
+
+/* Active phase pulse */
+.phase-pulse {
+  animation: pulse-ring 2.2s ease-out infinite;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Chat preview animations (Hero)
+───────────────────────────────────────────────────────── */
+
+/* Individual chat message fades in */
+@keyframes message-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typing indicator dots */
+@keyframes typing-bounce {
+  0%, 60%, 100% { transform: translateY(0);   opacity: 0.35; }
+  30%            { transform: translateY(-4px); opacity: 1; }
+}
+
+.typing-dot {
+  animation: typing-bounce 1.1s ease-in-out infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.18s; }
+.typing-dot:nth-child(3) { animation-delay: 0.36s; }
+
+/* Chat message enter */
+.msg-enter {
+  animation: message-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .key-enter,
+  .dash-animate,
+  .phase-pulse,
+  .typing-dot,
+  .msg-enter {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    width: var(--bar-pct, 50%) !important;
+  }
+}

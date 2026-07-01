@@ -1,0 +1,2 @@
+- [Clinksy project](project_clinksy.md) — UK-first home buying guides + guided journey, Next.js + Tailwind marketing site (guides live, dashboard & matching coming soon)
+- Fresh copy of Doorstep, rebranded, blogs-only for now, no AI-assistant references, deploys to its own Vercel project
