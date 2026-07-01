@@ -501,6 +501,241 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [1, 2, 3, 4, 5, 8, 9, 10],
     publishDate: "2025-01-01",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 6. STAMP DUTY FOR FIRST-TIME BUYERS
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "stamp-duty-first-time-buyers-uk",
+    guideTitle:
+      "Stamp Duty for first-time buyers in the UK (2026 rates & relief)",
+    headline: "Stamp Duty for first-time buyers, explained",
+    metaDescription:
+      "How much Stamp Duty will you pay as a UK first-time buyer in 2026? Current SDLT rates, first-time buyer relief up to £500,000, worked examples, and how Scotland and Wales differ.",
+    intro:
+      "Stamp Duty is often the biggest single tax you'll pay when buying a home — but as a first-time buyer in England or Northern Ireland, you may pay nothing at all. This guide explains the 2026 rates, exactly how first-time buyer relief works, and shows worked examples so you can budget with confidence.",
+    sections: [
+      {
+        h2: "What is Stamp Duty Land Tax?",
+        paragraphs: [
+          "Stamp Duty Land Tax (SDLT) is a tax you pay when you buy a home or land over a certain price in England and Northern Ireland. It's charged on a sliding scale, so you only pay the higher rate on the portion of the price that falls into each band — not on the whole amount.",
+          "Scotland and Wales run their own separate systems (Land and Buildings Transaction Tax in Scotland, Land Transaction Tax in Wales), with different thresholds — so the rules below apply to England and Northern Ireland.",
+          "You normally have 14 days from completion to file an SDLT return and pay. In practice your conveyancing solicitor handles this for you and collects the money as part of completion.",
+        ],
+        relatedStageIds: [9, 10],
+      },
+      {
+        h2: "First-time buyer relief: the 2026 rules",
+        paragraphs: [
+          "If you and everyone you're buying with are first-time buyers and the home will be your main residence, you get a discount. As of 2026 you pay no SDLT on the first £300,000, and 5% on the portion between £300,001 and £500,000.",
+          "There's a cliff edge to watch: if the price is more than £500,000, you can't claim first-time buyer relief at all and you pay the standard rates on the whole purchase instead.",
+        ],
+        bullets: [
+          "£0 to £300,000 — 0% (no Stamp Duty at all)",
+          "£300,001 to £500,000 — 5% on that portion",
+          "Over £500,000 — no relief; standard rates apply to the full price",
+        ],
+        relatedStageIds: [1, 3],
+      },
+      {
+        h2: "The standard rates (if you don't qualify)",
+        paragraphs: [
+          "If you're not a first-time buyer — or the price is above £500,000 — these are the standard single-property rates for 2026. If buying the property means you'll own more than one home, you usually pay a further 5% surcharge on top, and non-UK residents pay an extra 2%.",
+        ],
+        bullets: [
+          "Up to £125,000 — 0%",
+          "£125,001 to £250,000 — 2%",
+          "£250,001 to £925,000 — 5%",
+          "£925,001 to £1.5 million — 10%",
+          "Above £1.5 million — 12%",
+        ],
+      },
+      {
+        h2: "Worked examples",
+        paragraphs: [
+          "A first-time buyer purchasing at £295,000 pays £0, because the whole price sits under the £300,000 threshold. A first-time buyer at £400,000 pays 5% on the £100,000 above £300,000 — that's £5,000.",
+          "A first-time buyer buying right at £500,000 pays £10,000 (5% on the £200,000 above £300,000). But a first-time buyer at £520,000 loses the relief entirely and pays the standard rates, which work out far higher — a strong reason to be careful negotiating around that £500,000 line.",
+          "For comparison, a non-first-time buyer purchasing at £295,000 pays £4,750 under the standard bands.",
+        ],
+        relatedStageIds: [3],
+      },
+    ],
+    faqs: [
+      {
+        q: "Who counts as a first-time buyer for Stamp Duty?",
+        a: "Someone who has never owned a freehold or leasehold interest in a residential property — anywhere in the world — and who intends to live in the new home as their main residence. If you're buying jointly, every buyer must be a first-time buyer to qualify for the relief.",
+      },
+      {
+        q: "Do I pay Stamp Duty on a £250,000 first home?",
+        a: "No. As a first-time buyer you pay nothing up to £300,000, so a £250,000 purchase attracts no SDLT in England or Northern Ireland.",
+      },
+      {
+        q: "When and how do I pay it?",
+        a: "An SDLT return must be filed and the tax paid within 14 days of completion. Your solicitor almost always handles the return and collects the amount from you as part of the completion funds, so you rarely deal with HMRC directly.",
+      },
+      {
+        q: "Is Stamp Duty different in Scotland and Wales?",
+        a: "Yes. Scotland charges Land and Buildings Transaction Tax (LBTT) and Wales charges Land Transaction Tax (LTT), each with its own bands and first-time buyer treatment. The rates in this guide apply only to England and Northern Ireland.",
+      },
+    ],
+    relatedStageIds: [1, 3, 9, 10],
+    publishDate: "2026-07-01",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 7. THE LIFETIME ISA FOR FIRST-TIME BUYERS
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "lifetime-isa-first-time-buyers-uk",
+    guideTitle:
+      "The Lifetime ISA for first-time buyers (2026): bonus, limits & rules",
+    headline: "The Lifetime ISA for first-time buyers",
+    metaDescription:
+      "How the Lifetime ISA helps UK first-time buyers: the 25% government bonus, the £4,000 annual limit, the £450,000 property cap, and the withdrawal penalty to avoid.",
+    intro:
+      "The Lifetime ISA (LISA) is one of the most generous tools a UK first-time buyer has: the government tops up your savings by 25%. But it comes with strict rules — a property price cap, a minimum holding period, and a penalty if you use the money the wrong way. Here's exactly how it works in 2026.",
+    sections: [
+      {
+        h2: "What is a Lifetime ISA?",
+        paragraphs: [
+          "A Lifetime ISA is a savings or investment account designed to help you buy your first home or save for later life. You can open one between the ages of 18 and 39, and pay in until you're 50.",
+          "The headline benefit is a 25% government bonus on what you save — free money towards your deposit, provided you follow the rules below.",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "The bonus and the limits",
+        paragraphs: [
+          "You can pay in up to £4,000 each tax year, and this counts towards your overall £20,000 ISA allowance for the 2026 to 2027 tax year. The government then adds 25% on top — so the maximum bonus is £1,000 a year.",
+          "The bonus is paid monthly, based on what you contributed, and you keep earning it on new contributions right up until your 50th birthday. Over several years of saving the maximum, the bonuses add up to a meaningful chunk of a deposit.",
+        ],
+        bullets: [
+          "Pay in up to £4,000 per tax year",
+          "Government adds 25% — up to £1,000 a year",
+          "Counts towards your £20,000 annual ISA allowance",
+          "Bonus paid monthly, until you turn 50",
+        ],
+      },
+      {
+        h2: "Using it to buy your first home",
+        paragraphs: [
+          "To put your LISA towards a purchase, the home must cost £450,000 or less (the same cap applies anywhere in the UK), you must be buying with a mortgage, and your first LISA payment must have been at least 12 months ago.",
+          "The money is sent directly to your conveyancer, not to you. If you're buying with a partner who also has a Lifetime ISA, you can both use your accounts and both bonuses on the same property — a big advantage for couples.",
+        ],
+        bullets: [
+          "Property price must be £450,000 or less",
+          "You must buy with a mortgage and live there",
+          "The LISA must have been open at least 12 months",
+          "Two first-time buyers can combine two LISAs on one home",
+        ],
+        relatedStageIds: [1, 3],
+      },
+      {
+        h2: "The withdrawal penalty to watch",
+        paragraphs: [
+          "If you take money out for anything other than a qualifying first home (before age 60, and outside of terminal illness), you pay a 25% government withdrawal charge. Because of how the maths works, that charge claws back the whole bonus plus a small slice of your own savings.",
+          "For example, if you save £1,000 and receive a £250 bonus, your balance is £1,250. A 25% withdrawal charge is £312.50, leaving £937.50 — so you'd get back less than you put in. The lesson: only put money you're confident you'll use for a first home (or retirement) into a LISA.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can my partner and I both use a Lifetime ISA on the same house?",
+        a: "Yes. If you're both first-time buyers, you can each hold a Lifetime ISA and use both accounts — and both 25% bonuses — towards the same property, as long as it costs £450,000 or less.",
+      },
+      {
+        q: "What's the maximum property price for a Lifetime ISA?",
+        a: "£450,000, and that cap is the same across the whole of the UK. If the home costs more than £450,000 you can't use LISA funds without triggering the 25% withdrawal charge.",
+      },
+      {
+        q: "Should I use a Help to Buy ISA or a Lifetime ISA?",
+        a: "You can no longer open a Help to Buy ISA — that scheme is closed to new savers. The Lifetime ISA is the current option and has a higher annual limit and bonus, though it has the £450,000 property cap and the withdrawal charge to keep in mind.",
+      },
+      {
+        q: "How long do I have to wait before I can use it?",
+        a: "Your Lifetime ISA must have been open for at least 12 months from your first payment before you can use it towards a first home without penalty.",
+      },
+    ],
+    relatedStageIds: [1, 3],
+    publishDate: "2026-07-01",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 8. FIRST-TIME BUYER SCHEMES
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "first-time-buyer-schemes-uk",
+    guideTitle:
+      "First-time buyer schemes in the UK (2026): Shared Ownership, First Homes & more",
+    headline: "First-time buyer schemes in the UK",
+    metaDescription:
+      "The government schemes that can help you onto the ladder in 2026 — Shared Ownership, the First Homes scheme, the Lifetime ISA — plus what happened to Help to Buy.",
+    intro:
+      "If a standard mortgage and deposit feel out of reach, several government-backed schemes are designed to help first-time buyers in England buy sooner. Here's how the main options work in 2026, who qualifies, and how they fit together.",
+    sections: [
+      {
+        h2: "Shared Ownership",
+        paragraphs: [
+          "With Shared Ownership you buy a share of a home — usually between 10% and 75% — and pay rent to a housing association on the share you don't own. You need a mortgage and deposit only on the share you're buying, so the upfront cost is much lower than buying outright.",
+          "Over time you can buy further shares (called 'staircasing'), often all the way up to 100%. It's generally available to households earning £80,000 a year or less (£90,000 in London), and the home is held on a leasehold basis.",
+        ],
+        bullets: [
+          "Buy a 10%–75% share, rent the rest",
+          "Staircase up to 100% over time",
+          "Household income cap: £80,000 (£90,000 in London)",
+        ],
+        relatedStageIds: [1, 5],
+      },
+      {
+        h2: "The First Homes scheme",
+        paragraphs: [
+          "The First Homes scheme offers selected new-build properties to first-time buyers at a discount of at least 30% off the market price — and that discount stays with the home when it's sold on, so future first-time buyers benefit too.",
+          "To be eligible you must be a first-time buyer, your household income must be £80,000 or less (£90,000 in London), and your mortgage must cover at least half of the discounted price. After the discount, the home must cost £250,000 or less (£420,000 in London). Local councils can prioritise people with a connection to the area or key workers.",
+        ],
+        bullets: [
+          "At least 30% off the market price, kept for future buyers",
+          "Mortgage must cover 50%+ of the discounted price",
+          "Post-discount price cap: £250,000 (£420,000 in London)",
+        ],
+        relatedStageIds: [1, 2],
+      },
+      {
+        h2: "The Lifetime ISA",
+        paragraphs: [
+          "Not a way to buy, but a powerful way to save: the Lifetime ISA adds a 25% government bonus (up to £1,000 a year) to money you put towards a first home worth £450,000 or less. It pairs well with the schemes above — you can use LISA savings for the deposit on a Shared Ownership or First Homes purchase.",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "What happened to Help to Buy?",
+        paragraphs: [
+          "The Help to Buy equity loan scheme has closed to new applicants, and you can no longer open a Help to Buy ISA. If you already hold a Help to Buy ISA you can keep saving into it, but new savers should look at the Lifetime ISA instead.",
+          "Separately, many lenders offer 95% mortgages, meaning you can buy with a 5% deposit without any specific scheme — worth comparing alongside the options above with a whole-of-market broker.",
+        ],
+        relatedStageIds: [1],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I combine first-time buyer schemes?",
+        a: "Often, yes. For example, you can use Lifetime ISA savings (including the 25% bonus) towards the deposit on a Shared Ownership or First Homes purchase. You can't use a LISA if the property costs more than £450,000, though.",
+      },
+      {
+        q: "Do I pay Stamp Duty on a Shared Ownership home?",
+        a: "It depends on the value and how you choose to be taxed — you can either pay Stamp Duty on the full market value upfront or in stages as you staircase. It's worth getting your solicitor's advice, and reading our Stamp Duty guide for first-time buyer relief.",
+      },
+      {
+        q: "Is Help to Buy still available?",
+        a: "The Help to Buy equity loan has ended and the Help to Buy ISA is closed to new savers. The Lifetime ISA is the main savings scheme available to new first-time buyers today.",
+      },
+      {
+        q: "What are the income limits for Shared Ownership?",
+        a: "Generally your household must earn £80,000 a year or less, rising to £90,000 in London. Individual housing associations may apply further local eligibility criteria.",
+      },
+    ],
+    relatedStageIds: [1, 2, 5],
+    publishDate: "2026-07-01",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {

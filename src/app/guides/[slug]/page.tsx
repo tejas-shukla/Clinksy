@@ -89,10 +89,14 @@ export default function GuidePage({ params }: { params: Params }) {
     // Related stages: pick 3 others, prioritising same phase.
     const related = [
       ...DASHBOARD_STAGES.filter(
-        (s) => s.id !== stage.id && STAGE_ID_TO_PHASE[s.id] === stage.id,
+        (s) =>
+          s.id !== stage.id &&
+          STAGE_ID_TO_PHASE[s.id] === STAGE_ID_TO_PHASE[stage.id],
       ),
       ...DASHBOARD_STAGES.filter(
-        (s) => s.id !== stage.id && STAGE_ID_TO_PHASE[s.id] !== stage.id,
+        (s) =>
+          s.id !== stage.id &&
+          STAGE_ID_TO_PHASE[s.id] !== STAGE_ID_TO_PHASE[stage.id],
       ),
     ].slice(0, 3);
 
@@ -483,7 +487,7 @@ export default function GuidePage({ params }: { params: Params }) {
             Ready to put this into action?
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink/70">
-            Sign up free and Clinksy will give you a dashboard that tracks exactly where you are — costs scaled to your purchase price, providers near your postcode, and the AI assistant ready to answer any of these questions in your specific context.
+            Sign up free and Clinksy will give you a dashboard that tracks exactly where you are — costs scaled to your purchase price, providers near your postcode, and the right professional matched to you at the right time.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/start" className="btn-solid">See my next steps</Link>
