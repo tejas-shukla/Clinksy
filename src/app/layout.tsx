@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     template: "%s · Clinksy",
   },
   description:
-    "Clinksy is the AI assistant for first-time UK home buyers. Plain-English next steps, real costs, and a clean way to compare every solicitor, broker, and surveyor at every stage.",
+    "Clinksy helps first-time UK home buyers with plain-English guides for every stage, real cost estimates, and the right mortgage adviser, solicitor, or surveyor matched to you at the right time.",
   openGraph: {
     title: "Clinksy — Buying your first home, without the panic.",
     description:
-      "AI home buying assistant for the UK. One place to ask anything and compare every option.",
+      "Plain-English UK home buying guides, real costs, and the right professional matched to you at the right time.",
     type: "website",
     locale: "en_GB",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Clinksy",
     description:
-      "AI home buying assistant for the UK. Calm guidance and a clean way to compare every option.",
+      "Plain-English UK home buying guides, real costs, and the right professional matched at the right time.",
   },
 };
 

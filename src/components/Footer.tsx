@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsLink } from "@/components/CookieSettingsLink";
+import { ClinksyMark } from "@/components/ClinksyMark";
 
 const GUIDE_LINKS = [
   { label: "Blog", href: "/blog" },
@@ -28,7 +29,10 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <p className="font-serif text-2xl tracking-tightish text-ink">Clinksy</p>
+            <p className="flex items-center gap-2 font-serif text-2xl lowercase tracking-tightish text-ink">
+              <ClinksyMark className="h-7 w-7" />
+              clinksy
+            </p>
             <p className="mt-1 text-xs text-ink/50">Made in the UK.</p>
             <p className="mt-4 text-sm leading-relaxed text-ink/55">
               Plain-English guidance for first-time UK home buyers. Free, no lead farm.
