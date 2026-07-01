@@ -9,6 +9,20 @@ import {
   STAGE_ID_TO_PHASE,
 } from "@/lib/journey-data";
 import { TOPIC_GUIDES } from "@/lib/topic-guides";
+import { NEWS_ITEMS, fetchLiveHeadlines } from "@/lib/news";
+
+// Revalidate hourly so live headlines stay fresh without a rebuild.
+export const revalidate = 3600;
+
+function formatDate(iso: string): string {
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://clinksy.com";
@@ -73,7 +87,9 @@ const POSTS: BlogPost[] = [...topicPosts, ...stagePosts];
 // ── FAQ set (one representative Q&A per stage guide) ───────────────────
 const FAQS = DASHBOARD_STAGES.map((s) => s.faqs[0]).filter(Boolean);
 
-export default function BlogLanding() {
+export default async function BlogLanding() {
+  const liveHeadlines = await fetchLiveHeadlines();
+
   // Blog schema with every article as a BlogPosting.
   const blogSchema = {
     "@context": "https://schema.org",
@@ -153,6 +169,92 @@ export default function BlogLanding() {
 
         {/* Search + filter + grid (interactive) */}
         <BlogIndex posts={POSTS} categories={CATEGORIES} />
+
+        {/* ── Latest home-buying news ─────────────────────────────── */}
+        <section
+          id="latest-news"
+          className="mt-20 border-t border-ink/10 pt-12"
+        >
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Latest news</p>
+              <h2 className="mt-3 font-serif text-2xl leading-tight text-ink sm:text-3xl">
+                Home-buying news, updated regularly
+              </h2>
+            </div>
+            <span className="hidden flex-none items-center gap-1.5 text-xs text-ink/45 sm:flex">
+              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-400" />
+              Kept current
+            </span>
+          </div>
+
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink/65">
+            What's moving the UK property market right now — prices, mortgage
+            rates, and support for first-time buyers.
+          </p>
+
+          {/* Curated headlines with summaries */}
+          <ul className="mt-8 divide-y divide-ink/10 border-y border-ink/10">
+            {NEWS_ITEMS.map((n) => (
+              <li key={n.url + n.title} className="py-5">
+                <a
+                  href={n.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
+                  <div className="flex items-center gap-2 text-xs text-ink/45">
+                    <span className="font-medium text-ink/60">{n.source}</span>
+                    {formatDate(n.date) && (
+                      <>
+                        <span aria-hidden>·</span>
+                        <time dateTime={n.date}>{formatDate(n.date)}</time>
+                      </>
+                    )}
+                  </div>
+                  <p className="mt-1.5 font-serif text-xl leading-snug text-ink transition-colors group-hover:text-accent-400">
+                    {n.title}
+                  </p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-ink/60">
+                    {n.summary}
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Live headlines from around the web (graceful if empty) */}
+          {liveHeadlines.length > 0 && (
+            <div className="mt-8">
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-ink/50">
+                More headlines from around the web
+              </p>
+              <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                {liveHeadlines.map((h) => (
+                  <li key={h.url}>
+                    <a
+                      href={h.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex h-full flex-col rounded-xl border border-ink/10 bg-bone-50 p-4 transition-colors hover:border-ink/30"
+                    >
+                      <span className="text-[15px] leading-snug text-ink/85 group-hover:text-ink">
+                        {h.title}
+                      </span>
+                      <span className="mt-2 text-xs text-ink/45">
+                        {h.source}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-xs text-ink/40">
+                Headlines via Google News. Clinksy links out to the original
+                publishers.
+              </p>
+            </div>
+          )}
+        </section>
 
         {/* Browse by stage — internal linking block for SEO */}
         <section className="mt-20 border-t border-ink/10 pt-12">
