@@ -45,7 +45,7 @@ export function ContentGate({ children }: { children: React.ReactNode }) {
       await fetch("/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: clean }),
+        body: JSON.stringify({ email: clean, source: "guide-gate" }),
       });
     } catch {
       /* still unlock — the address is captured client-side */

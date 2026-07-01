@@ -80,6 +80,7 @@ export function ComingSoon({
                 aria-label="Early access email signup"
                 className="mt-6 flex flex-col gap-3"
               >
+                <input type="hidden" name="source" value="coming-soon" />
                 <label htmlFor="email" className="sr-only">
                   Email address
                 </label>

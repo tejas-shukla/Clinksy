@@ -24,6 +24,7 @@ export function EmailCapture() {
               aria-label="Early access email signup"
               className="flex flex-col gap-3"
             >
+              <input type="hidden" name="source" value="homepage" />
               <label htmlFor="email" className="sr-only">
                 Email address
               </label>
