@@ -178,12 +178,50 @@
   animation: message-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+/* ─────────────────────────────────────────────────────────
+   Matcher / journey section animations (Compare)
+───────────────────────────────────────────────────────── */
+
+/* Matched-pro detail card slides + fades in on each stage change */
+@keyframes matcher-reveal {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.matcher-reveal {
+  animation: matcher-reveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Auto-advance progress bar fills over the dwell time */
+@keyframes matcher-progress {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+.matcher-progress {
+  animation: matcher-progress 3.2s linear both;
+}
+
+/* Soft breathing highlight on the active step's accent number */
+@keyframes matcher-pop {
+  0%   { transform: scale(0.6); opacity: 0.4; }
+  60%  { transform: scale(1.12); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.matcher-pop {
+  animation: matcher-pop 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .key-enter,
   .dash-animate,
   .phase-pulse,
   .typing-dot,
-  .msg-enter {
+  .msg-enter,
+  .matcher-reveal,
+  .matcher-progress,
+  .matcher-pop {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;

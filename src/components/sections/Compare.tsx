@@ -103,9 +103,19 @@ export function Compare() {
                   Your journey
                 </p>
                 <span className="flex items-center gap-1.5 text-[11px] text-ink/45">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-400" />
                   Live dashboard
                 </span>
+              </div>
+
+              {/* Auto-advance progress bar */}
+              <div className="mt-4 h-0.5 w-full overflow-hidden rounded-full bg-ink/[0.06]">
+                {!paused && (
+                  <div
+                    key={active}
+                    className="matcher-progress h-full rounded-full bg-accent-400/50"
+                  />
+                )}
               </div>
 
               {/* Journey steps */}
@@ -113,21 +123,26 @@ export function Compare() {
                 {STAGES.map((s, i) => {
                   const isActive = i === active;
                   return (
-                    <li key={s.id}>
+                    <li
+                      key={s.id}
+                      className="dash-animate fade-up"
+                      style={{ animationDelay: `${i * 80}ms` }}
+                    >
                       <button
                         type="button"
                         onClick={() => select(i)}
                         aria-expanded={isActive}
-                        className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${
+                        className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-all duration-300 ${
                           isActive
                             ? "border-ink/25 bg-ink/[0.03]"
                             : "border-transparent hover:bg-ink/[0.02]"
                         }`}
                       >
                         <span
+                          key={isActive ? `on-${i}` : `off-${i}`}
                           className={`flex h-6 w-6 flex-none items-center justify-center rounded-full text-[11px] font-medium transition-colors ${
                             isActive
-                              ? "bg-accent-400 text-bone"
+                              ? "matcher-pop bg-accent-400 text-bone"
                               : "bg-ink/10 text-ink/50"
                           }`}
                         >
@@ -156,7 +171,10 @@ export function Compare() {
 
                       {/* Matched-pro detail for the active stage */}
                       {isActive && (
-                        <div className="mx-1 mt-2 rounded-xl border border-ink/10 bg-bone/60 p-4">
+                        <div
+                          key={s.id}
+                          className="matcher-reveal mx-1 mt-2 rounded-xl border border-ink/10 bg-bone/60 p-4"
+                        >
                           {s.pro ? (
                             <>
                               <div className="flex items-center gap-2">
