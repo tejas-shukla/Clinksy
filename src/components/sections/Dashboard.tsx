@@ -1,6 +1,6 @@
 "use client";
 
-// Dashboard section — visual preview of the Clinksy dashboard.
+// Dashboard section — visual preview of the Clinkeys dashboard.
 // Scroll-triggered animations: cost bar grows, cards fade up, phases pop in.
 // Layout matches the product screenshot (4-phase progress, 3-col + 2-col cards,
 // quick actions row, collapsed activity log).
@@ -89,7 +89,7 @@ export function Dashboard() {
               on one page.
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/65">
-              Clinksy is the one tab you return to. Transparent progress,
+              Clinkeys is the one tab you return to. Transparent progress,
               every cost itemised, proactive reminders — and the assistant
               always to hand. No lead-farm noise.
             </p>

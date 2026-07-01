@@ -15,7 +15,7 @@ type Props = {
  * (dashboard, adviser matching, guided start). Renders a plain
  * server-side email form that posts to /api/signup — no client JS,
  * no external assistant. Uses the site's existing design tokens so
- * the look and colour theme stay consistent with the rest of Clinksy.
+ * the look and colour theme stay consistent with the rest of Clinkeys.
  */
 export function ComingSoon({
   eyebrow,

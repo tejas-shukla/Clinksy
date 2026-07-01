@@ -23,7 +23,7 @@ export default function MortgageApplicationPage() {
   // Load or initialise application once user is known
   useEffect(() => {
     if (!isLoaded) return;
-    const email = user?.email ?? "guest@clinksy.com";
+    const email = user?.email ?? "guest@clinkeys.com";
     const existing = getApplication(email);
     if (existing) {
       setApp(existing);
@@ -88,7 +88,7 @@ export default function MortgageApplicationPage() {
       <header className="border-b border-ink/10">
         <div className="container-narrow flex items-center justify-between py-4">
           <Link href="/" className="font-serif text-2xl tracking-tightish text-ink">
-            Clinksy
+            Clinkeys
           </Link>
           <div className="flex items-center gap-4">
             <p className="text-sm text-ink/50">

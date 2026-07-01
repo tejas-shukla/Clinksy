@@ -4,7 +4,7 @@ import { ComingSoon } from "@/components/ComingSoon";
 export const metadata: Metadata = {
   title: "Matched advisers, solicitors & surveyors — coming soon",
   description:
-    "Clinksy will match you with trusted mortgage advisers, solicitors, and surveyors at the right point in your journey. Join the list to hear when it launches.",
+    "Clinkeys will match you with trusted mortgage advisers, solicitors, and surveyors at the right point in your journey. Join the list to hear when it launches.",
 };
 
 export default function AdvisorPortalPage() {
@@ -18,7 +18,7 @@ export default function AdvisorPortalPage() {
           <span className="text-accent-400">at the right moment.</span>
         </>
       }
-      description="As you move through buying, Clinksy will match you with trusted mortgage advisers, conveyancing solicitors, and surveyors — with clear pricing and no lead-farm nonsense — while still guiding you at every step."
+      description="As you move through buying, Clinkeys will match you with trusted mortgage advisers, conveyancing solicitors, and surveyors — with clear pricing and no lead-farm nonsense — while still guiding you at every step."
       bullets={[
         "Mortgage advisers when you're ready for an agreement in principle",
         "Conveyancing solicitors once your offer is accepted",

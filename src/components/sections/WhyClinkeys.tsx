@@ -2,7 +2,7 @@ const cards = [
   {
     title: "Always free for buyers.",
     body:
-      "We don't sell your data. We don't pass you to estate agents or brokers without your say-so. Clinksy is funded by transparent partner fees — never by selling you out.",
+      "We don't sell your data. We don't pass you to estate agents or brokers without your say-so. Clinkeys is funded by transparent partner fees — never by selling you out.",
   },
   {
     title: "Transparent, every step.",
@@ -16,7 +16,7 @@ const cards = [
   },
 ];
 
-export function WhyClinksy() {
+export function WhyClinkeys() {
   return (
     <section className="border-t border-ink/10">
       <div className="container-narrow py-24 sm:py-28">
@@ -30,7 +30,7 @@ export function WhyClinksy() {
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/65">
               Most home-buying sites exist to capture you as a lead and sell
-              that on. Clinksy is the opposite of that.
+              that on. Clinkeys is the opposite of that.
             </p>
           </div>
 

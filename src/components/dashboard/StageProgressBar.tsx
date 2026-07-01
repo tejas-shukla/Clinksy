@@ -15,7 +15,7 @@ import {
 } from "@/lib/journey-data";
 // ─── localStorage helpers ─────────────────────────────────────────────────────
 
-const STORAGE_KEY = "clinksy_stage_reminders_v1";
+const STORAGE_KEY = "clinkeys_stage_reminders_v1";
 
 function loadReminders(): Record<number, string> {
   if (typeof window === "undefined") return {};

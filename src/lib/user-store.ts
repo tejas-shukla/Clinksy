@@ -1,9 +1,9 @@
-// user-store.ts — simple localStorage-based user identity for Clinksy.
+// user-store.ts — simple localStorage-based user identity for Clinkeys.
 // No passwords. Name + email only. Persists across browser sessions.
 
 import { useState, useEffect } from "react";
 
-const USER_KEY = "clinksy_user_v1";
+const USER_KEY = "clinkeys_user_v1";
 
 export type StoredUser = {
   name: string;

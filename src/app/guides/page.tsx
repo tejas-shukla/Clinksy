@@ -7,7 +7,7 @@ import { TOPIC_GUIDES } from "@/lib/topic-guides";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://clinksy.com";
+  "https://clinkeys.com";
 
 export const metadata: Metadata = {
   title: "UK home buying guides — plain English for every stage",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Free, plain-English guides for every stage of buying a home in the UK. Costs, timelines, and the right questions to ask — written for first-time buyers.",
   alternates: { canonical: `${SITE_URL}/guides` },
   openGraph: {
-    title: "UK home buying guides — Clinksy",
+    title: "UK home buying guides — Clinkeys",
     description:
       "Plain-English guides for every stage of buying a home in the UK, from mortgage in principle to picking up the keys.",
     url: `${SITE_URL}/guides`,
@@ -38,7 +38,7 @@ export default function GuidesIndex() {
     name: "UK Home Buying Guides",
     description: "Free, plain-English guides for every stage of buying a home in the UK.",
     url: `${SITE_URL}/guides`,
-    publisher: { "@type": "Organization", name: "Clinksy", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
     mainEntity: {
       "@type": "ItemList",
       itemListElement: [

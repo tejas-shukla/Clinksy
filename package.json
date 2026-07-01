@@ -1,8 +1,8 @@
 {
-  "name": "clinksy",
+  "name": "clinkeys",
   "version": "0.1.0",
   "private": true,
-  "description": "Clinksy — home buying guides and a guided journey for first-time UK buyers.",
+  "description": "Clinkeys — home buying guides and a guided journey for first-time UK buyers.",
   "scripts": {
     "dev": "next dev -p 4001",
     "build": "next build",

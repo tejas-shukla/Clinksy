@@ -25,13 +25,13 @@ function formatDate(iso: string): string {
 }
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://clinksy.com";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://clinkeys.com";
 
 export const metadata: Metadata = {
   title:
     "The UK home buying blog — guides, costs & tips for first-time buyers",
   description:
-    "Clinksy's home buying blog: expert, plain-English guides on UK mortgages, conveyancing, surveys, stamp duty, and every stage of buying your first home. Free, no lead farm.",
+    "Clinkeys's home buying blog: expert, plain-English guides on UK mortgages, conveyancing, surveys, stamp duty, and every stage of buying your first home. Free, no lead farm.",
   keywords: [
     "home buying blog",
     "first time buyer guide UK",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
-    title: "The UK home buying blog — Clinksy",
+    title: "The UK home buying blog — Clinkeys",
     description:
       "Expert, plain-English guides on UK mortgages, conveyancing, surveys, stamp duty, and every stage of buying your first home.",
     url: `${SITE_URL}/blog`,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The UK home buying blog — Clinksy",
+    title: "The UK home buying blog — Clinkeys",
     description:
       "Expert, plain-English guides on every stage of buying your first home in the UK.",
   },
@@ -95,13 +95,13 @@ export default async function BlogLanding() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "@id": `${SITE_URL}/blog`,
-    name: "The Clinksy UK Home Buying Blog",
+    name: "The Clinkeys UK Home Buying Blog",
     description:
       "Expert, plain-English guides on every stage of buying a home in the UK.",
     url: `${SITE_URL}/blog`,
     publisher: {
       "@type": "Organization",
-      name: "Clinksy",
+      name: "Clinkeys",
       url: SITE_URL,
     },
     blogPost: POSTS.map((p) => ({
@@ -111,8 +111,8 @@ export default async function BlogLanding() {
       url: `${SITE_URL}/guides/${p.slug}`,
       datePublished: p.date,
       articleSection: p.category,
-      author: { "@type": "Organization", name: "Clinksy" },
-      publisher: { "@type": "Organization", name: "Clinksy", url: SITE_URL },
+      author: { "@type": "Organization", name: "Clinkeys" },
+      publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
     })),
   };
 
@@ -249,7 +249,7 @@ export default async function BlogLanding() {
                 ))}
               </ul>
               <p className="mt-3 text-xs text-ink/40">
-                Headlines via Google News. Clinksy links out to the original
+                Headlines via Google News. Clinkeys links out to the original
                 publishers.
               </p>
             </div>
@@ -334,7 +334,7 @@ export default async function BlogLanding() {
             Get these guides tailored to your move.
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink/70">
-            Join the early-access list and your Clinksy dashboard will surface
+            Join the early-access list and your Clinkeys dashboard will surface
             the right stage for you — costs scaled to your purchase price and
             the right professional matched at the right time.
           </p>

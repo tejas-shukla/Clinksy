@@ -17,7 +17,7 @@ export function PromiseSection() {
             browser tabs.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-ink/70 sm:text-xl">
-            Clinksy gives you one place to ask anything, at any stage, and
+            Clinkeys gives you one place to ask anything, at any stage, and
             get an answer that&apos;s actually written for you — not a generic
             article from 2017.
           </p>

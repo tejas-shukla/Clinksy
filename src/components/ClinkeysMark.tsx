@@ -1,4 +1,4 @@
-export function ClinksyMark({ className = "" }: { className?: string }) {
+export function ClinkeysMark({ className = "" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 100 100"

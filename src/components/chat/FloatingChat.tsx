@@ -81,7 +81,7 @@ export function FloatingChat() {
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-accent-400" />
               <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink/55">
-                Clinksy guide
+                Clinkeys guide
               </span>
             </div>
             <button

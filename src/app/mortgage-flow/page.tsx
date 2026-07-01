@@ -92,7 +92,7 @@ const ADVISORS: Advisor[] = [
 
 // ─── Selected advisor store ───────────────────────────────────────────────────
 
-const ADVISOR_KEY = "clinksy_selected_advisor_v1";
+const ADVISOR_KEY = "clinkeys_selected_advisor_v1";
 
 function loadSelectedAdvisor(): Advisor | null {
   try {
@@ -168,7 +168,7 @@ function MortgageFlowInner() {
       <header className="border-b border-ink/10">
         <div className="container-narrow flex items-center justify-between py-4">
           <Link href="/" className="font-serif text-2xl tracking-tightish text-ink">
-            Clinksy
+            Clinkeys
           </Link>
           <Link href="/dashboard" className="text-xs text-ink/40 hover:text-ink/70">
             ← Back to dashboard

@@ -4,7 +4,7 @@ import { ComingSoon } from "@/components/ComingSoon";
 export const metadata: Metadata = {
   title: "Your buying dashboard — coming soon",
   description:
-    "The Clinksy dashboard will track your whole home buying journey — next steps, costs, documents, and reminders. Join the list to hear when it launches.",
+    "The Clinkeys dashboard will track your whole home buying journey — next steps, costs, documents, and reminders. Join the list to hear when it launches.",
 };
 
 export default function DashboardPage() {

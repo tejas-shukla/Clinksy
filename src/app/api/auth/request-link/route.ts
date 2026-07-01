@@ -75,7 +75,7 @@ export async function POST(req: Request) {
   const link = `${baseUrl.replace(/\/$/, "")}/auth/verify?token=${encodeURIComponent(token)}`;
 
   console.log(
-    `[Clinksy] Magic link for ${email} (${situation ?? "unknown"} / ${stage ?? "unknown"}):\n${link}`,
+    `[Clinkeys] Magic link for ${email} (${situation ?? "unknown"} / ${stage ?? "unknown"}):\n${link}`,
   );
 
   let emailed = false;
@@ -84,7 +84,7 @@ export async function POST(req: Request) {
       await sendViaResend(email, link);
       emailed = true;
     } catch (err) {
-      console.error("[Clinksy] Resend send failed:", err);
+      console.error("[Clinkeys] Resend send failed:", err);
     }
   }
 
@@ -106,10 +106,10 @@ async function sendViaResend(to: string, link: string) {
       Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: "Clinksy <hello@clinksy.com>",
+      from: "Clinkeys <hello@clinkeys.com>",
       to,
-      subject: "Your Clinksy sign-in link",
-      text: `Click this link to open your Clinksy dashboard. It's valid for 12 months:\n\n${link}\n\nIf you didn't request this, you can ignore it.`,
+      subject: "Your Clinkeys sign-in link",
+      text: `Click this link to open your Clinkeys dashboard. It's valid for 12 months:\n\n${link}\n\nIf you didn't request this, you can ignore it.`,
     }),
   });
   if (!res.ok) {

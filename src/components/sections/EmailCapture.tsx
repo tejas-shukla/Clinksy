@@ -11,7 +11,7 @@ export function EmailCapture() {
               through the door.
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/65">
-              Clinksy is in early access. Drop your email and we&apos;ll let
+              Clinkeys is in early access. Drop your email and we&apos;ll let
               you know the moment we open up — plus a few useful guides while
               you wait.
             </p>

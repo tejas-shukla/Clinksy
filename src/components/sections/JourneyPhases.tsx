@@ -36,7 +36,7 @@ export function JourneyPhases() {
               That&apos;s the whole shape.
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/65">
-              You don&apos;t need to memorise this. Clinksy guides you through
+              You don&apos;t need to memorise this. Clinkeys guides you through
               each phase as you reach it — never all at once.
             </p>
             <div className="mt-8">

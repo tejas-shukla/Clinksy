@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "Privacy",
   description:
-    "How Clinksy handles your data — what we collect, why, how long we keep it, and your rights under UK GDPR.",
+    "How Clinkeys handles your data — what we collect, why, how long we keep it, and your rights under UK GDPR.",
 };
 
 export default function PrivacyPage() {
@@ -31,13 +31,13 @@ export default function PrivacyPage() {
 
         <Section title="Who we are">
           <p>
-            &ldquo;Clinksy&rdquo; refers to the operator of this website. For
+            &ldquo;Clinkeys&rdquo; refers to the operator of this website. For
             the purposes of UK GDPR, we are the data controller for any
             personal information you provide via the site.
           </p>
           <p>
             To get in touch about anything in this policy, including a data
-            request, email <a href="mailto:privacy@clinksy.com" className="text-ink underline underline-offset-2">privacy@clinksy.com</a>.
+            request, email <a href="mailto:privacy@clinkeys.com" className="text-ink underline underline-offset-2">privacy@clinkeys.com</a>.
           </p>
         </Section>
 
@@ -128,7 +128,7 @@ export default function PrivacyPage() {
           </ul>
           <p>
             To exercise any of these, email{" "}
-            <a href="mailto:privacy@clinksy.com" className="text-ink underline underline-offset-2">privacy@clinksy.com</a>.
+            <a href="mailto:privacy@clinkeys.com" className="text-ink underline underline-offset-2">privacy@clinkeys.com</a>.
             We&apos;ll respond within 30 days.
           </p>
         </Section>

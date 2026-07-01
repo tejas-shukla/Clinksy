@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "My Journey | Clinksy",
+  title: "My Journey | Clinkeys",
   description: "A simple, focused view of your home buying stage — one step at a time.",
 };
 

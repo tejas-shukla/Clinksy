@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ClinksyMark } from "@/components/ClinksyMark";
+import { ClinkeysMark } from "@/components/ClinkeysMark";
 
 const NAV_LINKS = [
   { label: "Blog", href: "/blog" },
@@ -20,12 +20,12 @@ export function Header() {
         <Link
           href="/"
           className="flex items-center gap-2"
-          aria-label="Clinksy home"
+          aria-label="Clinkeys home"
           onClick={() => setOpen(false)}
         >
-          <ClinksyMark className="h-8 w-8" />
+          <ClinkeysMark className="h-8 w-8" />
           <span className="font-serif text-2xl lowercase tracking-tightish text-ink">
-            clinksy
+            clinkeys
           </span>
         </Link>
 

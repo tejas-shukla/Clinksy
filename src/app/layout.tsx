@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
   title: {
-    default: "Clinksy — Buying your first home, without the panic.",
-    template: "%s · Clinksy",
+    default: "Clinkeys — Buying your first home, without the panic.",
+    template: "%s · Clinkeys",
   },
   description:
-    "Clinksy helps first-time UK home buyers with plain-English guides for every stage, real cost estimates, and the right mortgage adviser, solicitor, or surveyor matched to you at the right time.",
+    "Clinkeys helps first-time UK home buyers with plain-English guides for every stage, real cost estimates, and the right mortgage adviser, solicitor, or surveyor matched to you at the right time.",
   openGraph: {
-    title: "Clinksy — Buying your first home, without the panic.",
+    title: "Clinkeys — Buying your first home, without the panic.",
     description:
       "Plain-English UK home buying guides, real costs, and the right professional matched to you at the right time.",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clinksy",
+    title: "Clinkeys",
     description:
       "Plain-English UK home buying guides, real costs, and the right professional matched at the right time.",
   },

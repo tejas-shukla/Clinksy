@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Clinksy — Buying your first home, without the panic.";
+export const alt = "Clinkeys — Buying your first home, without the panic.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -27,7 +27,7 @@ export default async function OGImage() {
             color: "#0A0A0A",
           }}
         >
-          Clinksy
+          Clinkeys
         </div>
 
         <div

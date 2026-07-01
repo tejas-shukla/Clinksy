@@ -40,7 +40,6 @@ function DoorMark() {
         role="img"
         aria-label="A monochrome illustration of a front door with a brass key"
       >
-        <text x="160" y="34" textAnchor="middle" fontFamily="Georgia, serif" fontSize="14" fill="#0A0A0A" fillOpacity="0.55" letterSpacing="2">№ 1</text>
         <rect x="58" y="56" width="204" height="320" rx="2" fill="none" stroke="#0A0A0A" strokeWidth="1" opacity="0.35" />
         <rect x="74" y="72" width="172" height="288" rx="1" fill="#0A0A0A" />
         <rect x="92"  y="96"  width="60" height="86"  rx="1" fill="none" stroke="#FAFAF7" strokeWidth="0.75" opacity="0.35" />

@@ -1,6 +1,6 @@
 ---
 name: Buyer↔Advisor chat — pending auth work
-description: Open item to address before Clinksy development is called final
+description: Open item to address before Clinkeys development is called final
 type: feedback
 ---
 

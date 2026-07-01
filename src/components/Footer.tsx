@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsLink } from "@/components/CookieSettingsLink";
-import { ClinksyMark } from "@/components/ClinksyMark";
+import { ClinkeysMark } from "@/components/ClinkeysMark";
 
 const GUIDE_LINKS = [
   { label: "Blog", href: "/blog" },
@@ -30,8 +30,8 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <p className="flex items-center gap-2 font-serif text-2xl lowercase tracking-tightish text-ink">
-              <ClinksyMark className="h-7 w-7" />
-              clinksy
+              <ClinkeysMark className="h-7 w-7" />
+              clinkeys
             </p>
             <p className="mt-1 text-xs text-ink/50">Made in the UK.</p>
             <p className="mt-4 text-sm leading-relaxed text-ink/55">
@@ -97,9 +97,9 @@ export function Footer() {
 
         {/* Disclaimer */}
         <p className="mt-12 max-w-2xl text-xs leading-relaxed text-ink/40">
-          Clinksy is an information assistant, not a regulated advisor. For
+          Clinkeys is an information assistant, not a regulated advisor. For
           mortgage, legal, or financial decisions, always consult an
-          appropriately qualified professional. © {new Date().getFullYear()} Clinksy.
+          appropriately qualified professional. © {new Date().getFullYear()} Clinkeys.
         </p>
       </div>
     </footer>

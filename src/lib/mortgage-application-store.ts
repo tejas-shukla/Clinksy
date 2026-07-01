@@ -153,7 +153,7 @@ export function blankApplication(email: string): MortgageApplication {
 
 // ─── Storage ──────────────────────────────────────────────────────────────────
 
-const APPS_KEY = "clinksy_mortgage_apps_v1";
+const APPS_KEY = "clinkeys_mortgage_apps_v1";
 
 type AppsStore = Record<string, MortgageApplication>;
 

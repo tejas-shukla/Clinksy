@@ -539,7 +539,7 @@ function ScoreScreen({
       ? { emoji: "🏆", msg: "Excellent! You really know your stuff." }
       : pct >= 60
       ? { emoji: "👍", msg: "Good effort! A bit more reading and you'll nail it." }
-      : { emoji: "📖", msg: "Keep learning — check out Clinksy's guides to brush up." };
+      : { emoji: "📖", msg: "Keep learning — check out Clinkeys's guides to brush up." };
 
   return (
     <div className="rounded-2xl border border-ink/10 bg-bone-50 p-6 text-center space-y-4">

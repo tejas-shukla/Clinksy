@@ -1,6 +1,6 @@
 # The UK Home Buying Journey — 10 stages
 
-Clinksy's knowledge base for the AI assistant and for future deep-dive guide pages. Covers England, Wales, and Northern Ireland. Scotland is different (separate Missives process, LBTT, no exchange/completion split) — handled in its own guide.
+Clinkeys's knowledge base for the AI assistant and for future deep-dive guide pages. Covers England, Wales, and Northern Ireland. Scotland is different (separate Missives process, LBTT, no exchange/completion split) — handled in its own guide.
 
 **Typical total timescale:** 12 weeks to 8 months end-to-end. Highly dependent on the chain and the solicitor.
 
@@ -232,7 +232,7 @@ Clinksy's knowledge base for the AI assistant and for future deep-dive guide pag
 
 ---
 
-## How Clinksy helps at every stage
+## How Clinkeys helps at every stage
 
 The AI assistant uses this structure to:
 

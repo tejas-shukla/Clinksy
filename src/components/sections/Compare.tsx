@@ -18,7 +18,7 @@ const STAGES: Stage[] = [
     phase: "Getting mortgage-ready",
     when: "Right at the start",
     pro: "Mortgage adviser",
-    why: "Clinksy matches you with a whole-of-market adviser to lock in your best rate before you start viewing.",
+    why: "Clinkeys matches you with a whole-of-market adviser to lock in your best rate before you start viewing.",
     need: "Matched on your deposit, income & timeline",
   },
   {
@@ -83,7 +83,7 @@ export function Compare() {
               right moment.
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/65">
-              As you move through your personalised Clinksy dashboard, we
+              As you move through your personalised Clinkeys dashboard, we
               understand where you are and what you need — and introduce the
               right mortgage adviser, solicitor, or surveyor at exactly the
               right time. No searching, no guesswork, no lead farm.
@@ -217,7 +217,7 @@ export function Compare() {
             </div>
 
             <p className="mt-4 text-center text-xs text-ink/40">
-              Clinksy stays on your side — we match you to the right fit at the
+              Clinkeys stays on your side — we match you to the right fit at the
               right time, and never sell your details.
             </p>
           </div>

@@ -1,10 +1,10 @@
 ---
-name: Clinksy visual direction
-description: Clinksy landing page should look modern and editorial — black/off-white, B&O-inspired, chat-as-hero, not Lovable-style AI flex
+name: Clinkeys visual direction
+description: Clinkeys landing page should look modern and editorial — black/off-white, B&O-inspired, chat-as-hero, not Lovable-style AI flex
 type: feedback
 originSessionId: fab007ff-09fb-4ae4-a6c1-fdff301af959
 ---
-The Clinksy landing page should feel modern, editorial, and calm — Bang & Olufsen-inspired aesthetic, not Lovable-style AI generative flex.
+The Clinkeys landing page should feel modern, editorial, and calm — Bang & Olufsen-inspired aesthetic, not Lovable-style AI generative flex.
 
 **Why:** The audience is anxious first-time UK home buyers, not AI early adopters. Lovable-style heroes (giant prompt box generating the page) make them feel like they're in someone else's product. A B&O-style monochrome editorial layout signals "considered and premium" without ever shouting "AI." The AI chat should be the hero *element* (front and centre, large, looking like a real friendly conversation) — but never the hero *gimmick*.
 

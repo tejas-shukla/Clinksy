@@ -5,7 +5,7 @@ import { PromiseSection } from "@/components/sections/Promise";
 import { JourneyPhases } from "@/components/sections/JourneyPhases";
 import { Compare } from "@/components/sections/Compare";
 import { Dashboard } from "@/components/sections/Dashboard";
-import { WhyClinksy } from "@/components/sections/WhyClinksy";
+import { WhyClinkeys } from "@/components/sections/WhyClinkeys";
 import { FAQ } from "@/components/sections/FAQ";
 import { EmailCapture } from "@/components/sections/EmailCapture";
 
@@ -19,7 +19,7 @@ export default function Home() {
         <PromiseSection />
         <JourneyPhases />
         <Compare />
-        <WhyClinksy />
+        <WhyClinkeys />
         <FAQ />
         <EmailCapture />
       </main>

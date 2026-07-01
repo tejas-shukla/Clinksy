@@ -21,8 +21,8 @@ type EmploymentType = "employed" | "self_employed" | "director" | "contractor";
 type Ownership = "solo" | "joint";
 type BuyerProfile = { employmentType: EmploymentType; ownership: Ownership };
 
-const PROFILE_KEY  = "clinksy_buyer_profile_v1";
-const PORTAL_KEY   = "clinksy_portal_v1";
+const PROFILE_KEY  = "clinkeys_buyer_profile_v1";
+const PORTAL_KEY   = "clinkeys_portal_v1";
 
 function loadProfile(): BuyerProfile | null {
   try { const r = localStorage.getItem(PROFILE_KEY); return r ? JSON.parse(r) : null; } catch { return null; }

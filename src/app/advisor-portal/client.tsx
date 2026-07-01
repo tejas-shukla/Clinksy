@@ -3,8 +3,8 @@
 // Advisor Portal — Phase 2
 // Mortgage advisors log in, see client list, review/approve documents,
 // leave notes, and upload documents on behalf of buyers.
-// Auth stored in clinksy_advisor_v1. Shared doc store: clinksy_portal_v1.
-// Demo clients seeded from clinksy_advisor_clients_v1 on first load.
+// Auth stored in clinkeys_advisor_v1. Shared doc store: clinkeys_portal_v1.
+// Demo clients seeded from clinkeys_advisor_clients_v1 on first load.
 
 import { useState, useRef, useEffect } from "react";
 import { Header } from "@/components/Header";
@@ -56,8 +56,8 @@ type AdvisorStore = { clients: Client[] };
 
 // ─── Storage keys ─────────────────────────────────────────────────────────────
 
-const ADVISOR_AUTH_KEY    = "clinksy_advisor_v1";
-const ADVISOR_CLIENTS_KEY = "clinksy_advisor_clients_v1";
+const ADVISOR_AUTH_KEY    = "clinkeys_advisor_v1";
+const ADVISOR_CLIENTS_KEY = "clinkeys_advisor_clients_v1";
 
 // ─── Doc definitions (mirrors dashboard3) ─────────────────────────────────────
 
@@ -412,7 +412,7 @@ export default function AdvisorPortalClient() {
 
             <p className="mt-4 text-center text-[11px] text-ink/30">
               Not a registered advisor?{" "}
-              <a href="/" className="underline hover:text-ink/60">Return to Clinksy</a>
+              <a href="/" className="underline hover:text-ink/60">Return to Clinkeys</a>
             </p>
           </div>
         </main>

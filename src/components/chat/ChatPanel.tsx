@@ -13,10 +13,10 @@ type Message = {
 const ACCOUNT_MARKER = "[[CREATE_ACCOUNT]]";
 
 const INITIAL_MESSAGE: Message = {
-  id: "clinksy-intro",
+  id: "clinkeys-intro",
   role: "assistant",
   content:
-    "Hi — I'm Clinksy. I help first-time buyers in the UK through every step of the process, in plain English. Before we get going, what should I call you?",
+    "Hi — I'm Clinkeys. I help first-time buyers in the UK through every step of the process, in plain English. Before we get going, what should I call you?",
 };
 
 function newId() {
@@ -182,7 +182,7 @@ export function ChatPanel() {
         <span className="h-2 w-2 rounded-full bg-ink/20" />
         <span className="h-2 w-2 rounded-full bg-ink/20" />
         <span className="ml-3 text-[11px] font-medium uppercase tracking-[0.18em] text-ink/45">
-          Clinksy · live
+          Clinkeys · live
         </span>
         {linkSent && (
           <span className="ml-auto rounded-full bg-accent-100 px-2.5 py-1 text-[11px] font-medium text-accent-500">

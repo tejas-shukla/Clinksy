@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 
-const FIRST_VISIT_KEY = "clinksy_dashboard_seen_v1";
+const FIRST_VISIT_KEY = "clinkeys_dashboard_seen_v1";
 
 // ─── SDLT calculator — England & Northern Ireland (rates from April 2025) ─────
 // Source: https://www.gov.uk/stamp-duty-land-tax/residential-property-rates

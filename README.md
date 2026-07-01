@@ -1,8 +1,8 @@
-# Clinksy
+# Clinkeys
 
 Home buying guides and a guided journey for first-time UK buyers.
 
-Clinksy helps first-time buyers understand the UK home buying process — mortgages,
+Clinkeys helps first-time buyers understand the UK home buying process — mortgages,
 solicitors, surveys, offers, chains, and negotiations — in plain English. The
 current release is **guides-first**: a full library of stage-by-stage and
 deep-dive articles, plus an email list for people who want early access to the

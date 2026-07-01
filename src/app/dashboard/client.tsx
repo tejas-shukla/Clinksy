@@ -55,7 +55,7 @@ export default function DashboardClient() {
       const app = getApplication(user.email);
       setAppStatus(app ? app.status : "none");
       try {
-        const raw = localStorage.getItem("clinksy_selected_advisor_v1");
+        const raw = localStorage.getItem("clinkeys_selected_advisor_v1");
         if (raw) setSelectedAdvisor(JSON.parse(raw)?.name ?? null);
       } catch {}
     }

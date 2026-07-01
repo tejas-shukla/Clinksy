@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Mortgage Portal | Clinksy",
+  title: "Mortgage Portal | Clinkeys",
   description:
     "Upload and track your mortgage application documents. Your advisor reviews each one and leaves notes directly in your portal.",
 };

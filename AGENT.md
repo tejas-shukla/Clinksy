@@ -1,6 +1,6 @@
-# Clinksy content agent
+# Clinkeys content agent
 
-A scheduled Cowork task (`clinksy-news-blog-agent`) keeps the site's content
+A scheduled Cowork task (`clinkeys-news-blog-agent`) keeps the site's content
 fresh for SEO. It runs **twice a week (Tuesday & Friday, ~07:00 local)**.
 
 Each run it:
@@ -14,7 +14,7 @@ Each run it:
    the sitemap, and gets its own Article + FAQ + Breadcrumb schema. It skips the
    post if it can't beat existing coverage (to avoid thin/duplicate content).
 4. **Verifies** with `npx tsc --noEmit`.
-5. **Publishes** — commits and pushes to `tejas-shukla/Clinksy`, which Vercel
+5. **Publishes** — commits and pushes to `tejas-shukla/Clinkeys`, which Vercel
    auto-deploys. If the automation lacks git credentials, it commits and asks
    you to run `git push`.
 

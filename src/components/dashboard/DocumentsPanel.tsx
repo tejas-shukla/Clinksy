@@ -18,7 +18,7 @@ type BuyerProfile = {
   ownership: Ownership;
 };
 
-const PROFILE_KEY = "clinksy_buyer_profile_v1";
+const PROFILE_KEY = "clinkeys_buyer_profile_v1";
 
 function loadProfile(): BuyerProfile | null {
   try {
@@ -39,7 +39,7 @@ const EMP_LABELS: Record<EmploymentType, { label: string; desc: string }> = {
 
 // ─── Shared document store (synced with /mortgage-portal) ────────────────────
 
-const PORTAL_KEY = "clinksy_portal_v1";
+const PORTAL_KEY = "clinkeys_portal_v1";
 
 type DocStatus = "not_started" | "uploaded" | "under_review" | "approved" | "needs_action";
 type UploadedFile = { name: string; sizeKb: number; uploadedAt: string };

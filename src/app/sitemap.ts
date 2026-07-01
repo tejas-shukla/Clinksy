@@ -4,7 +4,7 @@ import { TOPIC_GUIDES } from "@/lib/topic-guides";
 
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://clinksy.com";
+  "https://clinkeys.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

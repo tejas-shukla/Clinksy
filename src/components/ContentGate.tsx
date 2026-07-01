@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const STORAGE_KEY = "clinksy_unlocked";
+const STORAGE_KEY = "clinkeys_unlocked";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /**
@@ -81,7 +81,7 @@ export function ContentGate({ children }: { children: React.ReactNode }) {
             Read the full guide free
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-ink/65">
-            Pop in your email to unlock this guide and every other Clinksy
+            Pop in your email to unlock this guide and every other Clinkeys
             home-buying guide — plus tips and updates as you go. No spam,
             unsubscribe anytime.
           </p>

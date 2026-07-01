@@ -79,7 +79,7 @@ function DefaultBanner({
         About cookies
       </p>
       <p className="mt-2 text-[14px] leading-relaxed text-ink/75">
-        Clinksy uses a small sign-in cookie when you save your progress. That
+        Clinkeys uses a small sign-in cookie when you save your progress. That
         one is essential and doesn&apos;t need consent. Anything beyond that
         (analytics, etc.) only runs if you say yes.{" "}
         <Link

@@ -5,7 +5,7 @@ import { CookieSettingsLink } from "@/components/CookieSettingsLink";
 export const metadata = {
   title: "Cookies",
   description:
-    "What cookies Clinksy uses, why we use them, and how to change your preferences at any time.",
+    "What cookies Clinkeys uses, why we use them, and how to change your preferences at any time.",
 };
 
 export default function CookiesPage() {

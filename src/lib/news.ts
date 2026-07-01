@@ -87,7 +87,7 @@ export async function fetchLiveHeadlines(): Promise<LiveHeadline[]> {
   try {
     const res = await fetch(feed, {
       next: { revalidate: 3600 },
-      headers: { "User-Agent": "ClinksyBot/1.0 (+https://clinksy.com)" },
+      headers: { "User-Agent": "ClinkeysBot/1.0 (+https://clinkeys.com)" },
     });
     if (!res.ok) return [];
     const xml = await res.text();

@@ -178,7 +178,7 @@ const REQUIRED_IDS = new Set(ALL_DOCS.filter((d) => d.required).map((d) => d.id)
 
 // ─── localStorage store ───────────────────────────────────────────────────────
 
-const PORTAL_KEY = "clinksy_portal_v1";
+const PORTAL_KEY = "clinkeys_portal_v1";
 
 type DocStatus =
   | "not_started"
@@ -543,7 +543,7 @@ export default function MortgagePortalClient() {
               About this portal
             </p>
             <p className="mt-2 text-[12px] leading-relaxed text-ink/50">
-              This is Phase One of the Clinksy mortgage portal. Documents are
+              This is Phase One of the Clinkeys mortgage portal. Documents are
               currently stored in your browser only. Phase Two will connect your
               advisor directly so they can review, annotate, and approve your
               documents within the platform. UK mortgage applications only —

@@ -30,10 +30,10 @@ async function saveToAirtable(email: string, source: string, date: string) {
       },
     );
     if (!res.ok) {
-      console.error("[Clinksy] Airtable save failed:", await res.text());
+      console.error("[Clinkeys] Airtable save failed:", await res.text());
     }
   } catch (err) {
-    console.error("[Clinksy] Airtable save error:", err);
+    console.error("[Clinkeys] Airtable save error:", err);
   }
 }
 
@@ -48,7 +48,7 @@ async function saveToGoogleSheet(email: string, source: string, date: string) {
       body: JSON.stringify({ email, source, date }),
     });
   } catch (err) {
-    console.error("[Clinksy] Google Sheet save error:", err);
+    console.error("[Clinkeys] Google Sheet save error:", err);
   }
 }
 
@@ -63,14 +63,14 @@ async function maybeSendWelcome(email: string) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Clinksy <hello@clinksy.com>",
+        from: "Clinkeys <hello@clinkeys.com>",
         to: email,
-        subject: "Welcome to Clinksy — early access",
-        text: `Thanks for joining the Clinksy early-access list. We'll let you know the moment the dashboard and adviser matching go live, plus send the occasional newsletter.\n\nIn the meantime, our free home buying guides are here: ${process.env.NEXT_PUBLIC_SITE_URL || ""}/guides\n\n— Clinksy`,
+        subject: "Welcome to Clinkeys — early access",
+        text: `Thanks for joining the Clinkeys early-access list. We'll let you know the moment the dashboard and adviser matching go live, plus send the occasional newsletter.\n\nIn the meantime, our free home buying guides are here: ${process.env.NEXT_PUBLIC_SITE_URL || ""}/guides\n\n— Clinkeys`,
       }),
     });
   } catch (err) {
-    console.error("[Clinksy] Welcome email failed:", err);
+    console.error("[Clinkeys] Welcome email failed:", err);
   }
 }
 
@@ -103,7 +103,7 @@ export async function POST(req: Request) {
   const source = (body.source || "unknown").slice(0, 60);
   const date = new Date().toISOString();
 
-  console.log(`[Clinksy] Signup: ${email} (source: ${source})`);
+  console.log(`[Clinkeys] Signup: ${email} (source: ${source})`);
 
   // Persist everywhere that's configured (safe if none are set).
   await Promise.allSettled([

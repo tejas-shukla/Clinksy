@@ -1,6 +1,6 @@
 const faqs = [
   {
-    q: "Is Clinksy free to use?",
+    q: "Is Clinkeys free to use?",
     a: "The guides are free, and always will be. Matching you with a solicitor, mortgage adviser, or surveyor is free too — anyone on the early-access list gets first access as features roll out.",
   },
   {
@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Is it just for first-time buyers?",
-    a: "We focus on first-time buyers because that's where the confusion is highest, but Clinksy works for anyone moving home in the UK. Buy-to-let and shared ownership are coming soon.",
+    a: "We focus on first-time buyers because that's where the confusion is highest, but Clinkeys works for anyone moving home in the UK. Buy-to-let and shared ownership are coming soon.",
   },
   {
     q: "What about my data?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Are you regulated?",
-    a: "Clinksy is not a mortgage broker, solicitor, or financial advisor — we're an information service that helps you find and brief the right regulated professional. When a question needs a regulated answer, we'll tell you.",
+    a: "Clinkeys is not a mortgage broker, solicitor, or financial advisor — we're an information service that helps you find and brief the right regulated professional. When a question needs a regulated answer, we'll tell you.",
   },
   {
     q: "Which countries do you cover?",

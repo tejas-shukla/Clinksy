@@ -16,7 +16,7 @@ import { TOPIC_GUIDES, topicGuideBySlug } from "@/lib/topic-guides";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://clinksy.com";
+  "https://clinkeys.com";
 
 type Params = { slug: string };
 
@@ -109,8 +109,8 @@ export default function GuidePage({ params }: { params: Params }) {
       description: stage.metaDescription,
       url: `${SITE_URL}/guides/${stage.slug}`,
       inLanguage: "en-GB",
-      author: { "@type": "Organization", name: "Clinksy" },
-      publisher: { "@type": "Organization", name: "Clinksy", url: SITE_URL },
+      author: { "@type": "Organization", name: "Clinkeys" },
+      publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
       image: `${SITE_URL}/opengraph-image`,
       datePublished: "2025-01-01",
       dateModified: new Date().toISOString().split("T")[0],
@@ -292,7 +292,7 @@ export default function GuidePage({ params }: { params: Params }) {
               Want this as a checklist tailored to you?
             </h2>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink/70">
-              Sign up free and Clinksy will track your progress through this stage, surface providers near your postcode, and remind you before deadlines slip.
+              Sign up free and Clinkeys will track your progress through this stage, surface providers near your postcode, and remind you before deadlines slip.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link href="/start" className="btn-solid">See my next steps</Link>
@@ -335,7 +335,7 @@ export default function GuidePage({ params }: { params: Params }) {
           <p className="mt-12 text-xs text-ink/45">
             Last updated:{" "}
             {new Date().toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric" })}{" "}
-            · Clinksy is not a regulated advisor. For binding decisions, always confirm with a solicitor, broker, or surveyor.
+            · Clinkeys is not a regulated advisor. For binding decisions, always confirm with a solicitor, broker, or surveyor.
           </p>
         </main>
         <Footer />
@@ -362,8 +362,8 @@ export default function GuidePage({ params }: { params: Params }) {
     description: topic.metaDescription,
     url: `${SITE_URL}/guides/${topic.slug}`,
     inLanguage: "en-GB",
-    author: { "@type": "Organization", name: "Clinksy" },
-    publisher: { "@type": "Organization", name: "Clinksy", url: SITE_URL },
+    author: { "@type": "Organization", name: "Clinkeys" },
+    publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
     image: `${SITE_URL}/opengraph-image`,
     datePublished: topic.publishDate,
     dateModified: new Date().toISOString().split("T")[0],
@@ -506,7 +506,7 @@ export default function GuidePage({ params }: { params: Params }) {
             Ready to put this into action?
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink/70">
-            Sign up free and Clinksy will give you a dashboard that tracks exactly where you are — costs scaled to your purchase price, providers near your postcode, and the right professional matched to you at the right time.
+            Sign up free and Clinkeys will give you a dashboard that tracks exactly where you are — costs scaled to your purchase price, providers near your postcode, and the right professional matched to you at the right time.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/start" className="btn-solid">See my next steps</Link>
@@ -537,7 +537,7 @@ export default function GuidePage({ params }: { params: Params }) {
         <p className="mt-12 text-xs text-ink/45">
           Last updated:{" "}
           {new Date().toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric" })}{" "}
-          · Clinksy is not a regulated advisor. For binding decisions, always confirm with a solicitor, broker, or surveyor.
+          · Clinkeys is not a regulated advisor. For binding decisions, always confirm with a solicitor, broker, or surveyor.
         </p>
       </main>
       <Footer />

@@ -3,7 +3,7 @@ const beats = [
     n: "01",
     title: "Tell us where you are",
     body:
-      "Whether you've just started saving or you've had an offer accepted this morning, Clinksy meets you at your stage.",
+      "Whether you've just started saving or you've had an offer accepted this morning, Clinkeys meets you at your stage.",
   },
   {
     n: "02",

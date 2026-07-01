@@ -81,7 +81,7 @@ function usingUpstash(): boolean {
 }
 
 function keyFor(buyerEmail: string, channel: ChatChannel): string {
-  const base = `clinksy:conversation:${normaliseEmail(buyerEmail)}`;
+  const base = `clinkeys:conversation:${normaliseEmail(buyerEmail)}`;
   // "advisor" keeps the legacy unsuffixed key so existing threads are preserved.
   return channel === "advisor" ? base : `${base}:${channel}`;
 }
