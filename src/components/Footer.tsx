@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CookieSettingsLink } from "@/components/CookieSettingsLink";
 
 const GUIDE_LINKS = [
+  { label: "Blog", href: "/blog" },
   { label: "All guides", href: "/guides" },
   { label: "First-time buyer guide", href: "/guides/first-time-buyer-guide-uk" },
   { label: "Cost of buying a house", href: "/guides/cost-of-buying-a-house-uk" },
