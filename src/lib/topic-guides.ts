@@ -736,6 +736,86 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [1, 2, 5],
     publishDate: "2026-07-01",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 9. HOUSE SURVEY TYPES & COSTS
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "house-survey-types-cost-uk",
+    guideTitle: "House survey types and costs (2026): Level 1, 2 or 3?",
+    headline: "House surveys explained: which type do you actually need?",
+    metaDescription:
+      "RICS Level 1, 2 and 3 house surveys explained for UK buyers — what each one covers, what they cost in 2026, and how to choose the right survey for your home.",
+    intro:
+      "A house survey is your one chance to find out what is really wrong with a property before you are legally committed to buying it. Yet many first-time buyers skip it, confuse it with the lender's valuation, or pick the wrong level. This guide explains the three RICS survey levels in plain English, what each costs in 2026, and how to use the findings to protect yourself — and sometimes knock money off the price.",
+    sections: [
+      {
+        h2: "A survey is not the same as a mortgage valuation",
+        paragraphs: [
+          "This is the single most important thing to understand, and it catches out a huge number of buyers. When you take out a mortgage, your lender carries out a valuation. That valuation exists only to reassure the bank that the property is worth roughly what you are paying, so they can be confident of getting their money back if you default. It is often done as a quick drive-by or desktop check, and you may never even see the full report.",
+          "A valuation tells you almost nothing about the condition of the building. It will not warn you about damp, a failing roof, dodgy wiring, subsidence, or knackered windows. Only a proper survey — commissioned by you, working for you — does that. Paying a few hundred pounds now can save you tens of thousands in repairs you did not know were coming.",
+          "You arrange and pay for your own survey after your offer is accepted, usually while your solicitor is doing the legal work and before you exchange contracts. That timing matters: a survey after exchange is worthless, because by then you are already committed.",
+        ],
+        relatedStageIds: [4, 6],
+      },
+      {
+        h2: "The three RICS survey levels",
+        paragraphs: [
+          "In England, Wales and Northern Ireland, surveys follow the standard set by the Royal Institution of Chartered Surveyors (RICS), which grades them from Level 1 to Level 3. In Scotland the system is different — most sales include a Home Report prepared by the seller, which contains a single survey and valuation, so Scottish buyers rarely need to commission their own.",
+          "Choosing the right level comes down to the age, type and condition of the property. Newer and conventional homes need less scrutiny; older, altered or unusual buildings need more.",
+        ],
+        bullets: [
+          "Level 1 (Condition Report): a basic visual check that flags urgent defects and risks using a simple traffic-light system. Best for new-build or modern, conventional homes in good order. It offers no advice on repairs and no valuation.",
+          "Level 2 (HomeBuyer Report): the most popular choice. A more detailed inspection of everything visible and accessible, with advice on defects and future maintenance. Available with or without a valuation. Suited to conventional properties in reasonable condition, roughly under 50 years old.",
+          "Level 3 (Building Survey): the most thorough option. An in-depth analysis of the structure with detailed advice on defects, likely causes and repair options. Worth it for older properties, listed buildings, anything with obvious problems, or homes that have been heavily extended or altered.",
+        ],
+        relatedStageIds: [6],
+      },
+      {
+        h2: "How much does a house survey cost in 2026?",
+        paragraphs: [
+          "Prices vary by property value, size and region, but the 2026 averages give you a useful benchmark. As a rule, the more expensive and complex the property, the more the survey costs — and the more a good one is worth.",
+          "Do not choose on price alone. A cheap Level 1 on a Victorian terrace could miss serious structural problems, and the difference in cost between levels is trivial next to the cost of the repairs a survey can uncover.",
+        ],
+        bullets: [
+          "Level 1 Condition Report: around £380 on average, starting from a few hundred pounds.",
+          "Level 2 HomeBuyer Report: roughly £465–£685, averaging about £500.",
+          "Level 3 Building Survey: typically £575–£900 on average, and £1,000–£1,500+ for larger or higher-value homes.",
+          "Always use a surveyor who is RICS-registered, and get the quote confirmed in writing before you instruct.",
+        ],
+        relatedStageIds: [6],
+      },
+      {
+        h2: "What to do with the findings",
+        paragraphs: [
+          "A survey is only useful if you act on it. Read the whole report, not just the summary, and pay attention to anything rated as urgent or requiring further investigation. If the surveyor recommends a specialist follow-up — for example a damp and timber report, an electrical check, or a structural engineer for cracking — it is usually worth paying for it before you commit.",
+          "If the survey uncovers significant problems, you have three options: ask the seller to fix them before completion, renegotiate the price to reflect the cost of the work, or walk away. Get a builder's quote for the repairs first so your request is backed by a real number rather than guesswork. Because nothing is legally binding until exchange, you have genuine leverage at this stage — sellers often prefer to drop the price rather than lose the sale and start again.",
+          "If the report comes back clean, you have bought peace of mind and a maintenance to-do list for the years ahead. Either way, the survey has done its job.",
+        ],
+        relatedStageIds: [3, 6],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a house survey a legal requirement in the UK?",
+        a: "No. A survey is optional and is for your benefit, not the lender's. The only assessment the lender insists on is its own mortgage valuation, which does not tell you about the building's condition. Skipping a survey to save money is one of the biggest false economies in home buying.",
+      },
+      {
+        q: "Do I need a Level 2 or a Level 3 survey?",
+        a: "For a conventional home under about 50 years old and in reasonable condition, a Level 2 HomeBuyer Report is usually enough. Choose a Level 3 Building Survey for older, listed, unusual or visibly tired properties, or anything that has been significantly extended or altered.",
+      },
+      {
+        q: "Can I use a survey to renegotiate the price?",
+        a: "Yes, and buyers do this all the time. If the survey flags costly problems, get a builder's quote for the work and ask the seller to either fix the issues or reduce the price accordingly. As nothing is binding until exchange of contracts, you can renegotiate or withdraw without penalty.",
+      },
+      {
+        q: "When should I book my survey?",
+        a: "After your offer is accepted and once you are reasonably confident the purchase will proceed — typically alongside the legal work and always before you exchange contracts. Booking too early risks wasting money if the sale falls through; booking after exchange is pointless because you are already committed.",
+      },
+    ],
+    relatedStageIds: [3, 4, 6],
+    publishDate: "2026-07-01",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {

@@ -19,42 +19,42 @@ export const NEWS_ITEMS: NewsItem[] = [
     title:
       "Average asking price falls 0.6% in June — biggest June drop in 14 years",
     summary:
-      "New sellers trimmed asking prices to £376,191 as buyer caution grew ahead of expected tax and spending decisions, according to Rightmove's latest House Price Index.",
+      "Rightmove's House Price Index shows new sellers cut the average asking price to £376,191, now 0.5% below a year ago, as record supply for the time of year forces sharper pricing.",
     source: "Rightmove",
     url: "https://www.rightmove.co.uk/news/house-price-index/",
-    date: "2026-06-16",
+    date: "2026-06-15",
   },
   {
-    title: "House prices up 1.4% year-on-year as most regions return to growth",
+    title: "Bank of England holds base rate at 3.75% for a fourth time",
     summary:
-      "Zoopla reports every region except the South East is now flat or growing, helped by easing mortgage rates and resilient demand.",
+      "On 18 June the Monetary Policy Committee kept the base rate at 3.75%, its fourth consecutive hold, keeping mortgage pricing broadly stable for buyers.",
+    source: "Bank of England",
+    url: "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate",
+    date: "2026-06-18",
+  },
+  {
+    title: "Lenders keep cutting fixed rates as product choice tops 7,000",
+    summary:
+      "Moneyfacts data shows residential mortgage choice above 7,000 deals for the first time since March, with the average two-year fix around 5.55% as several major lenders trimmed rates through late June.",
+    source: "Moneyfacts",
+    url: "https://moneyfactscompare.co.uk/mortgages/",
+    date: "2026-06-26",
+  },
+  {
+    title: "Zoopla: house prices up 1.4% as most regions return to growth",
+    summary:
+      "Zoopla's June index puts the average UK home at around £271,900 and reports every region except the South East is now flat or growing, with first-time buyers staying active.",
     source: "Zoopla",
     url: "https://www.zoopla.co.uk/discover/property-news/house-price-index/",
-    date: "2026-06-10",
+    date: "2026-06-23",
   },
   {
-    title: "Mortgage rates ease back to around 4.8% after the spring peak",
+    title: "5% deposit mortgage choice hits highest level since 2008",
     summary:
-      "Average fixed rates edged lower in May from an April peak of nearly 5%, taking some pressure off monthly repayments for new buyers.",
+      "The number of 95% loan-to-value deals has risen past 7,500 — the most since March 2008 — widening options for first-time buyers, with average 95% two-year fixes near 5.4%.",
     source: "HomeOwners Alliance",
-    url: "https://hoa.org.uk/advice/guides-for-homeowners/for-owners/mortgage-rate-forecast/",
-    date: "2026-06-05",
-  },
-  {
-    title: "Lenders widen support for first-time buyers with low-deposit deals",
-    summary:
-      "More flexible affordability checks and a growing range of low-deposit and 95% mortgages are helping first-time buyers, whose prices are up a modest 0.3% year-on-year.",
-    source: "Zoopla",
-    url: "https://www.zoopla.co.uk/discover/property-news/whats-happening-with-house-prices-in-the-uk/",
-    date: "2026-06-10",
-  },
-  {
-    title: "Buyer demand cools: enquiries down ~15% as market takes a breath",
-    summary:
-      "Sales agreed are running about 7% below last year and buyer enquiries around 15% lower, with many buyers taking a wait-and-see approach.",
-    source: "Rightmove",
-    url: "https://www.rightmove.co.uk/news/house-price-index/",
-    date: "2026-06-16",
+    url: "https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/5-deposit-mortgages/",
+    date: "2026-06-20",
   },
 ];
 
