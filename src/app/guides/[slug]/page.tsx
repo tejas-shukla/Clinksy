@@ -119,6 +119,10 @@ export default function GuidePage({ params }: { params: Params }) {
         "@id": `${SITE_URL}/guides/${stage.slug}`,
       },
       articleSection: phaseName,
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["h1", ".lede"],
+      },
       isAccessibleForFree: false,
       hasPart: {
         "@type": "WebPageElement",
@@ -176,7 +180,7 @@ export default function GuidePage({ params }: { params: Params }) {
           <h1 className="mt-5 font-serif text-[40px] leading-[1.04] tracking-tightish text-ink sm:text-5xl md:text-[58px]">
             {stage.guideTitle}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/70 sm:text-xl">
+          <p className="lede mt-6 max-w-2xl text-lg leading-relaxed text-ink/70 sm:text-xl">
             {stage.metaDescription}
           </p>
 
@@ -368,6 +372,10 @@ export default function GuidePage({ params }: { params: Params }) {
     datePublished: topic.publishDate,
     dateModified: new Date().toISOString().split("T")[0],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/guides/${topic.slug}` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".lede"],
+    },
     isAccessibleForFree: false,
     hasPart: {
       "@type": "WebPageElement",
@@ -420,9 +428,32 @@ export default function GuidePage({ params }: { params: Params }) {
         <h1 className="mt-5 font-serif text-[40px] leading-[1.04] tracking-tightish text-ink sm:text-5xl md:text-[56px]">
           {topic.headline}
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/70 sm:text-xl">
+        <p className="lede mt-6 max-w-2xl text-lg leading-relaxed text-ink/70 sm:text-xl">
           {topic.intro}
         </p>
+
+        {topic.sections.length > 1 && (
+          <nav
+            aria-label="On this page"
+            className="mt-8 max-w-3xl rounded-2xl border border-ink/10 bg-bone-50 p-5 sm:p-6"
+          >
+            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-ink/50">
+              On this page
+            </p>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {topic.sections.map((s) => (
+                <li key={s.h2}>
+                  <a
+                    href={`#${slugify(s.h2)}`}
+                    className="text-sm text-ink/70 transition-colors hover:text-accent-400"
+                  >
+                    {s.h2}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
 
         <ContentGate>
         {/* Article body */}
@@ -433,7 +464,7 @@ export default function GuidePage({ params }: { params: Params }) {
               : [];
 
             return (
-              <section key={section.h2}>
+              <section key={section.h2} id={slugify(section.h2)} className="scroll-mt-24">
                 <h2 className="font-serif text-3xl leading-tight tracking-tightish text-ink sm:text-4xl">
                   {section.h2}
                 </h2>
@@ -546,6 +577,13 @@ export default function GuidePage({ params }: { params: Params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     </>
   );
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function Fact({ label, value }: { label: string; value: string }) {

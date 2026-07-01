@@ -42,6 +42,43 @@ export const metadata: Metadata = {
   },
 };
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://clinkeys.com";
+
+// Entity structured data — helps Google's Knowledge Graph and AI engines
+// (ChatGPT, Gemini, Perplexity) understand what Clinkeys is.
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
+  name: "Clinkeys",
+  url: SITE_URL,
+  logo: `${SITE_URL}/icon.svg`,
+  description:
+    "Clinkeys helps first-time buyers through the UK home buying process with plain-English guides and, soon, a personalised dashboard that matches the right mortgage adviser, solicitor, and surveyor at the right stage.",
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  knowsAbout: [
+    "UK home buying",
+    "first-time buyers",
+    "mortgages",
+    "conveyancing",
+    "property surveys",
+    "stamp duty",
+    "Lifetime ISA",
+    "shared ownership",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: "Clinkeys",
+  url: SITE_URL,
+  inLanguage: "en-GB",
+  publisher: { "@id": `${SITE_URL}/#organization` },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -52,6 +89,14 @@ export default function RootLayout({
       <body className="min-h-screen bg-bone text-ink antialiased">
         {children}
         <CookieBanner />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </body>
     </html>
   );
