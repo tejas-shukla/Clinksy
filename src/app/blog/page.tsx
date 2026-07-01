@@ -147,8 +147,8 @@ export default function BlogLanding() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/70 sm:text-xl">
           Expert, plain-English guides on mortgages, conveyancing, surveys,
           stamp duty, and every stage of buying your first home — what happens,
-          how long it takes, what it costs, and what to watch out for. Free, no
-          email needed, no lead farm.
+          how long it takes, what it costs, and what to watch out for. Free to
+          read, no lead farm.
         </p>
 
         {/* Search + filter + grid (interactive) */}

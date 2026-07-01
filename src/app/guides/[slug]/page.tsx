@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ContentGate } from "@/components/ContentGate";
 import {
   DASHBOARD_STAGES,
   PHASE_NAMES,
@@ -118,6 +119,12 @@ export default function GuidePage({ params }: { params: Params }) {
         "@id": `${SITE_URL}/guides/${stage.slug}`,
       },
       articleSection: phaseName,
+      isAccessibleForFree: false,
+      hasPart: {
+        "@type": "WebPageElement",
+        isAccessibleForFree: false,
+        cssSelector: ".gated-content",
+      },
     };
 
     const faqSchema = {
@@ -173,6 +180,7 @@ export default function GuidePage({ params }: { params: Params }) {
             {stage.metaDescription}
           </p>
 
+          <ContentGate>
           {/* Key facts strip */}
           <dl className="mt-10 grid gap-4 rounded-2xl border border-ink/10 bg-bone-50 p-6 sm:grid-cols-3">
             <Fact label="Typical timescale" value={stage.timescale} />
@@ -275,6 +283,8 @@ export default function GuidePage({ params }: { params: Params }) {
             </div>
           </section>
 
+          </ContentGate>
+
           {/* CTA */}
           <section className="mt-12 rounded-3xl border border-ink/10 bg-bone-50 p-6 sm:p-8">
             <p className="eyebrow">Your personalised version</p>
@@ -358,6 +368,12 @@ export default function GuidePage({ params }: { params: Params }) {
     datePublished: topic.publishDate,
     dateModified: new Date().toISOString().split("T")[0],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/guides/${topic.slug}` },
+    isAccessibleForFree: false,
+    hasPart: {
+      "@type": "WebPageElement",
+      isAccessibleForFree: false,
+      cssSelector: ".gated-content",
+    },
   };
 
   const faqSchema = {
@@ -408,6 +424,7 @@ export default function GuidePage({ params }: { params: Params }) {
           {topic.intro}
         </p>
 
+        <ContentGate>
         {/* Article body */}
         <div className="mt-12 max-w-3xl space-y-12">
           {topic.sections.map((section) => {
@@ -479,6 +496,8 @@ export default function GuidePage({ params }: { params: Params }) {
             ))}
           </div>
         </section>
+
+        </ContentGate>
 
         {/* CTA */}
         <section className="mt-12 rounded-3xl border border-ink/10 bg-bone-50 p-6 sm:p-8">

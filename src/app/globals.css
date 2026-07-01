@@ -213,6 +213,30 @@
   animation: matcher-pop 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+/* ─────────────────────────────────────────────────────────
+   Email content gate (Glassdoor-style) — Compare/guide bodies
+   Content stays in the DOM; it is only visually blurred + clipped.
+───────────────────────────────────────────────────────── */
+.gate-locked {
+  max-height: 300px;
+  overflow: hidden;
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 28%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 28%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+
 @media (prefers-reduced-motion: reduce) {
   .key-enter,
   .dash-animate,

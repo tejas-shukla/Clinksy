@@ -70,7 +70,7 @@ export default function GuidesIndex() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink/70 sm:text-xl">
           Free, plain-English guides for every step of buying a home in the UK — what happens, how long it takes, what it costs, and what to watch out for.
-          No email needed, no lead farm.
+          Free to read, no lead farm.
         </p>
 
         {/* ── Stage guides ─────────────────────────────────────────── */}
