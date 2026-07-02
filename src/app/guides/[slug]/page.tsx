@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ContentGate } from "@/components/ContentGate";
+import { GuideHero } from "@/components/GuideHero";
 import {
   DASHBOARD_STAGES,
   PHASE_NAMES,
@@ -111,7 +112,7 @@ export default function GuidePage({ params }: { params: Params }) {
       inLanguage: "en-GB",
       author: { "@type": "Organization", name: "Clinkeys" },
       publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
-      image: `${SITE_URL}/opengraph-image`,
+      image: `${SITE_URL}/guides/${stage.slug}/opengraph-image`,
       datePublished: "2025-01-01",
       dateModified: new Date().toISOString().split("T")[0],
       mainEntityOfPage: {
@@ -165,6 +166,8 @@ export default function GuidePage({ params }: { params: Params }) {
               <li className="text-ink/80">Stage {stage.id}</li>
             </ol>
           </nav>
+
+          <GuideHero label={phaseName} />
 
           <div className="mt-6 flex flex-wrap items-center gap-2 text-xs">
             <span className="rounded-full bg-accent-50 px-2.5 py-1 font-medium uppercase tracking-[0.16em] text-accent-500">
@@ -368,7 +371,7 @@ export default function GuidePage({ params }: { params: Params }) {
     inLanguage: "en-GB",
     author: { "@type": "Organization", name: "Clinkeys" },
     publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
-    image: `${SITE_URL}/opengraph-image`,
+    image: `${SITE_URL}/guides/${topic.slug}/opengraph-image`,
     datePublished: topic.publishDate,
     dateModified: new Date().toISOString().split("T")[0],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/guides/${topic.slug}` },
@@ -418,6 +421,8 @@ export default function GuidePage({ params }: { params: Params }) {
             <li className="text-ink/80">{topic.headline}</li>
           </ol>
         </nav>
+
+        <GuideHero label="In-depth guide" />
 
         <div className="mt-6">
           <span className="rounded-full bg-ink/8 px-2.5 py-1 text-xs font-medium uppercase tracking-[0.16em] text-ink/55">
