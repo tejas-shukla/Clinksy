@@ -91,7 +91,7 @@ export function ComingSoon({
                     type="email"
                     required
                     placeholder="you@email.com"
-                    className="flex-1 bg-transparent py-2 text-base text-ink placeholder:text-ink/35 focus:outline-none"
+                    className="min-w-0 flex-1 bg-transparent py-2 text-base text-ink placeholder:text-ink/35 focus:outline-none"
                   />
                   <button type="submit" className="btn-solid">
                     Notify me

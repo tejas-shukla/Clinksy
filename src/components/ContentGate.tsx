@@ -95,7 +95,7 @@ export function ContentGate({ children }: { children: React.ReactNode }) {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@email.com"
                 aria-label="Email address"
-                className="flex-1 bg-transparent py-2 text-base text-ink placeholder:text-ink/35 focus:outline-none"
+                className="min-w-0 flex-1 bg-transparent py-2 text-base text-ink placeholder:text-ink/35 focus:outline-none"
               />
               <button
                 type="submit"

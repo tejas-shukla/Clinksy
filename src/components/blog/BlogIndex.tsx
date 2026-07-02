@@ -66,7 +66,7 @@ export function BlogIndex({ posts, categories }: Props) {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search guides — mortgages, surveys, stamp duty…"
           aria-label="Search home buying guides"
-          className="flex-1 bg-transparent py-2 text-base text-ink placeholder:text-ink/35 focus:outline-none"
+          className="min-w-0 flex-1 bg-transparent py-2 text-base text-ink placeholder:text-ink/35 focus:outline-none"
         />
       </div>
 
