@@ -12,7 +12,7 @@ export default async function OGImage() {
         style={{
           width: "100%",
           height: "100%",
-          background: "#FAFAF7",
+          background: "#FAF7F2",
           color: "#0A0A0A",
           display: "flex",
           flexDirection: "column",
@@ -20,20 +20,35 @@ export default async function OGImage() {
           fontFamily: "Georgia, serif",
         }}
       >
-        <div
-          style={{
-            fontSize: 28,
-            letterSpacing: -0.4,
-            color: "#0A0A0A",
-          }}
-        >
-          Clinkeys
+        {/* Brand row */}
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <svg width="52" height="52" viewBox="0 0 100 100" fill="none">
+            <path
+              d="M28 75 L20 75 L20 40 L50 14 L80 40 L80 66"
+              stroke="#C5644A"
+              strokeWidth="6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <g
+              transform="rotate(-26 47 47)"
+              stroke="#1c1c1c"
+              fill="none"
+              strokeLinecap="round"
+            >
+              <circle cx="47" cy="47" r="13" strokeWidth="6.5" />
+              <line x1="47" y1="60" x2="47" y2="90" strokeWidth="6.5" />
+              <line x1="47" y1="80" x2="59" y2="80" strokeWidth="5.5" />
+              <line x1="47" y1="89" x2="56" y2="89" strokeWidth="5.5" />
+            </g>
+          </svg>
+          <div style={{ fontSize: 34, letterSpacing: -0.4 }}>clinkeys</div>
         </div>
 
         <div
           style={{
             display: "flex",
-            alignItems: "center",
+            alignItems: "flex-end",
             gap: 48,
             marginTop: "auto",
           }}
@@ -46,14 +61,14 @@ export default async function OGImage() {
                 letterSpacing: 4,
                 textTransform: "uppercase",
                 color: "#C5644A",
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
-              Your AI home buying assistant
+              Plain-English UK home buying guides
             </div>
             <div
               style={{
-                fontSize: 92,
+                fontSize: 88,
                 lineHeight: 1.02,
                 letterSpacing: -2,
                 color: "#0A0A0A",
@@ -64,7 +79,7 @@ export default async function OGImage() {
             </div>
             <div
               style={{
-                fontSize: 92,
+                fontSize: 88,
                 lineHeight: 1.02,
                 letterSpacing: -2,
                 color: "#C5644A",
@@ -74,74 +89,40 @@ export default async function OGImage() {
             </div>
           </div>
 
-          {/* Door + key mark */}
-          <svg width="280" height="350" viewBox="0 0 320 400">
-            <rect
-              x="58"
-              y="56"
-              width="204"
-              height="320"
-              rx="2"
-              fill="none"
-              stroke="#0A0A0A"
-              strokeWidth="1.5"
-              opacity="0.35"
+          {/* Keyring-in-house mark */}
+          <svg width="300" height="300" viewBox="0 0 100 100" fill="none">
+            <path
+              d="M28 75 L20 75 L20 40 L50 14 L80 40 L80 66"
+              stroke="#C5644A"
+              strokeWidth="6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-            <rect x="74" y="72" width="172" height="288" rx="1" fill="#0A0A0A" />
-            <rect
-              x="92"
-              y="96"
-              width="60"
-              height="86"
-              rx="1"
+            <g
+              transform="rotate(-26 47 47)"
+              stroke="#1c1c1c"
               fill="none"
-              stroke="#FAFAF7"
-              strokeWidth="0.75"
-              opacity="0.35"
-            />
-            <rect
-              x="168"
-              y="96"
-              width="60"
-              height="86"
-              rx="1"
-              fill="none"
-              stroke="#FAFAF7"
-              strokeWidth="0.75"
-              opacity="0.35"
-            />
-            <rect
-              x="92"
-              y="200"
-              width="60"
-              height="138"
-              rx="1"
-              fill="none"
-              stroke="#FAFAF7"
-              strokeWidth="0.75"
-              opacity="0.35"
-            />
-            <rect
-              x="168"
-              y="200"
-              width="60"
-              height="138"
-              rx="1"
-              fill="none"
-              stroke="#FAFAF7"
-              strokeWidth="0.75"
-              opacity="0.35"
-            />
-            <rect x="135" y="190" width="50" height="3" rx="1" fill="#FAFAF7" opacity="0.45" />
-            <circle cx="218" cy="226" r="3.5" fill="#FAFAF7" opacity="0.85" />
-            <g transform="translate(200 230) rotate(-14)">
-              <circle cx="0" cy="0" r="11" fill="none" stroke="#C5644A" strokeWidth="2.5" />
-              <circle cx="0" cy="0" r="3.5" fill="#FAFAF7" />
-              <rect x="11" y="-2" width="34" height="4" fill="#C5644A" />
-              <rect x="36" y="-2" width="4" height="9" fill="#C5644A" />
-              <rect x="42" y="-2" width="4" height="6" fill="#C5644A" />
+              strokeLinecap="round"
+            >
+              <circle cx="47" cy="47" r="13" strokeWidth="6.5" />
+              <line x1="47" y1="60" x2="47" y2="90" strokeWidth="6.5" />
+              <line x1="47" y1="80" x2="59" y2="80" strokeWidth="5.5" />
+              <line x1="47" y1="89" x2="56" y2="89" strokeWidth="5.5" />
             </g>
           </svg>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            marginTop: 40,
+            fontFamily: "system-ui, sans-serif",
+            fontSize: 22,
+            color: "#0A0A0A",
+            opacity: 0.55,
+          }}
+        >
+          clinkeys.com
         </div>
       </div>
     ),
