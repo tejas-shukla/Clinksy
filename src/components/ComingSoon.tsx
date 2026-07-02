@@ -27,7 +27,7 @@ export function ComingSoon({
   return (
     <>
       <Header />
-      <main className="container-narrow py-20 sm:py-24 md:py-28">
+      <main className="center-on-mobile container-narrow py-20 sm:py-24 md:py-28">
         <div className="grid gap-12 md:grid-cols-12 md:gap-10 lg:gap-16">
           <div className="md:col-span-6">
             <p className="eyebrow">{eyebrow}</p>

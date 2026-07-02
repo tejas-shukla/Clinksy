@@ -214,6 +214,25 @@
 }
 
 /* ─────────────────────────────────────────────────────────
+   Center-align marketing pages on mobile only
+───────────────────────────────────────────────────────── */
+@media (max-width: 639px) {
+  .center-on-mobile {
+    text-align: center;
+  }
+  /* keep bulleted/ordered lists and accordions left-aligned for readability */
+  .center-on-mobile ul,
+  .center-on-mobile ol,
+  .center-on-mobile details {
+    text-align: left;
+  }
+  /* center wrapped rows (CTAs, tag/pill groups) */
+  .center-on-mobile .flex.flex-wrap {
+    justify-content: center;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────
    Email content gate (Glassdoor-style) — Compare/guide bodies
    Content stays in the DOM; it is only visually blurred + clipped.
 ───────────────────────────────────────────────────────── */
