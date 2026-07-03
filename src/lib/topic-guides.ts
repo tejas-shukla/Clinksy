@@ -816,6 +816,101 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [3, 4, 6],
     publishDate: "2026-07-01",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 10. GIFTED DEPOSITS
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "gifted-deposit-mortgage-uk",
+    guideTitle: "Gifted deposits explained: UK mortgage rules (2026)",
+    headline: "Gifted deposits: how to use family money for your deposit",
+    metaDescription:
+      "How gifted deposits work for a UK mortgage in 2026 — the gift letter lenders require, who can gift, the 30-day fund seasoning rule, and the inheritance tax angle.",
+    intro:
+      "A gifted deposit is money given to you — usually by a parent or grandparent — to put towards your home, with no expectation of repayment and no stake in the property. UK lenders accept gifted deposits for almost all first-time buyer mortgages, but they will require a signed gift letter confirming the money is a genuine gift and not a loan. Get the paperwork right and it is one of the simplest ways onto the ladder.",
+    sections: [
+      {
+        h2: "What counts as a gifted deposit?",
+        paragraphs: [
+          "A gifted deposit is a sum given to you to use towards your deposit where the giver keeps no legal interest in the property and expects nothing back. That last part is what matters to a lender: if the money has to be repaid, it is a loan, and a loan changes your affordability and can sink the mortgage application.",
+          "Gifted deposits are fully compatible with first-time buyer mortgages and with first-time buyer Stamp Duty relief — receiving one does not affect your first-time buyer status. The gift can cover your whole deposit or just top up your own savings; both are normal.",
+        ],
+        bullets: [
+          "The money is a genuine gift, not a loan or an advance",
+          "The giver retains no share of or claim on the property",
+          "It works alongside first-time buyer Stamp Duty relief",
+          "It can be your entire deposit or a top-up to your savings",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "Who can gift a deposit?",
+        paragraphs: [
+          "Almost every lender accepts gifts from immediate family — parents, grandparents, and often siblings, and a spouse or civil partner. Beyond that it gets patchier: some lenders accept aunts, uncles, and cousins, while gifts from friends or an unrelated third party are accepted by only a minority. If your gift is coming from outside the immediate family, tell your broker up front so they can place you with a lender that allows it.",
+          "There is no cap on how much can be gifted for mortgage purposes — you could receive 100% of the deposit as a gift. The lender's concern is not the amount but the proof: they need to see who the money came from, that they could afford to give it, and that it is genuinely a gift.",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "What is a gifted deposit letter, and what must it say?",
+        paragraphs: [
+          "The gifted deposit letter is a short document, signed by whoever is giving the money, that every lender will ask for. Its job is to prove the money is an unconditional gift. The single most important line is that the money is a 'gift' — if the wording implies a 'loan', 'advance', or any repayment, the lender treats it as a debt and factors it into affordability.",
+          "Your solicitor or broker can supply a template, but the letter should confirm the key facts below. The giver will usually also need to provide proof of identity and bank statements showing where the money came from, as part of anti-money-laundering checks.",
+        ],
+        bullets: [
+          "The giver's name and their relationship to you",
+          "Your name and the property being purchased",
+          "The exact amount being gifted",
+          "A clear statement that it is a gift with no repayment expected",
+          "Confirmation the giver retains no legal interest in the property",
+          "That the giver is solvent and gifting from their own funds",
+        ],
+        relatedStageIds: [1, 5],
+      },
+      {
+        h2: "How early should the money be in your account?",
+        paragraphs: [
+          "Ideally, get the gifted funds into your own account at least 30 days before you apply, and 90 days is better. Lenders like to see the deposit 'seasoned' — sitting on your bank statements for a while — because it makes the source easy to verify and reassures them the money is not a last-minute loan.",
+          "Money arriving the week before completion is not fatal, but it invites extra questions and can slow things down while your solicitor and lender trace the source of funds. If a gift is on the way, move it early and keep every statement and transfer record.",
+        ],
+        relatedStageIds: [1, 5],
+      },
+      {
+        h2: "Are there tax implications for a gifted deposit?",
+        paragraphs: [
+          "There is no tax to pay on the gift itself. A cash gift from one UK individual to another is not income for you and creates no capital gains for the giver, so neither of you owes tax simply for making or receiving it.",
+          "The one thing to be aware of is inheritance tax (IHT). Under the '7 year rule', if the giver dies within seven years of making the gift, it can be counted as part of their estate. In practice most deposit gifts fall well within the giver's £325,000 nil-rate band, so no IHT arises. Everyone can also give away £3,000 a year under the annual exemption without it counting at all, and gifts made three to seven years before death benefit from taper relief on any tax due. This is general information, not tax advice — for larger gifts it is worth speaking to a financial adviser.",
+        ],
+        bullets: [
+          "No income tax or capital gains tax on the gift itself",
+          "£3,000 annual gift exemption per giver (can carry forward one year)",
+          "7 year rule: the gift can count for IHT if the giver dies within 7 years",
+          "Taper relief reduces any IHT on gifts made 3–7 years before death",
+        ],
+        relatedStageIds: [10],
+      },
+    ],
+    faqs: [
+      {
+        q: "Does a gifted deposit affect my first-time buyer status?",
+        a: "No. Receiving a gifted deposit does not change whether you count as a first-time buyer. As long as you have never owned a property, you keep first-time buyer status and the Stamp Duty relief that comes with it, even if a family member funds your whole deposit.",
+      },
+      {
+        q: "Can my parents gift me a deposit and still live in the house?",
+        a: "This gets complicated. If the person gifting also intends to live in or own part of the property, lenders may treat them as a joint owner or occupier rather than a pure giver, which changes the mortgage entirely. A genuine gifted deposit means the giver has no interest in and does not live in the property. Discuss any such arrangement with your broker before applying.",
+      },
+      {
+        q: "How much of my deposit can be gifted?",
+        a: "There is no lender limit — you can receive up to 100% of your deposit as a gift. What matters is the paperwork: a signed gift letter, proof of the giver's identity, and evidence of the source of the funds for anti-money-laundering checks.",
+      },
+      {
+        q: "Do I have to pay tax on a gifted house deposit?",
+        a: "Not on the gift itself — there is no income tax or capital gains tax for giving or receiving a cash gift between UK individuals. The only consideration is inheritance tax under the 7 year rule if the giver dies within seven years, though most deposit gifts sit within the £325,000 nil-rate band and attract no tax.",
+      },
+    ],
+    relatedStageIds: [1, 5, 10],
+    publishDate: "2026-07-03",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {

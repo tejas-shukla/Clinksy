@@ -17,6 +17,23 @@ export type NewsItem = {
 export const NEWS_ITEMS: NewsItem[] = [
   {
     title:
+      "Nationwide: annual house price growth picks up to 2.2% in June",
+    summary:
+      "Nationwide's index shows annual growth rising to 2.2% in June from 1.7% in May, with the average price at £277,484. Prices were broadly flat month-on-month; Northern Ireland remained the strongest region.",
+    source: "Nationwide",
+    url: "https://www.nationwide.co.uk/media/hpi/reports/annual-house-price-growth-edges-higher-in-june",
+    date: "2026-07-01",
+  },
+  {
+    title: "Mortgage approvals fall to lowest level since late 2023",
+    summary:
+      "Bank of England data shows house-purchase approvals dropped to 56,205 in May, down from 66,034 in April, while net mortgage borrowing fell to £2.9bn — signs of a cooling market as buyers weigh affordability.",
+    source: "Bank of England",
+    url: "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/may-2026",
+    date: "2026-06-30",
+  },
+  {
+    title:
       "Average asking price falls 0.6% in June — biggest June drop in 14 years",
     summary:
       "Rightmove's House Price Index shows new sellers cut the average asking price to £376,191, now 0.5% below a year ago, as record supply for the time of year forces sharper pricing.",
@@ -25,36 +42,20 @@ export const NEWS_ITEMS: NewsItem[] = [
     date: "2026-06-15",
   },
   {
-    title: "Bank of England holds base rate at 3.75% for a fourth time",
+    title: "First-time buyer fixed rates dip below 4.7% at 90% LTV",
     summary:
-      "On 18 June the Monetary Policy Committee kept the base rate at 3.75%, its fourth consecutive hold, keeping mortgage pricing broadly stable for buyers.",
+      "The lowest two-year fix for buyers with a 10% deposit has fallen to 4.69% (Coventry BS), with a five-year fix at 4.62%, as lenders keep trimming first-time buyer pricing through early July.",
+    source: "HomeOwners Alliance",
+    url: "https://hoa.org.uk/first-time-buyer-mortgage-rates/",
+    date: "2026-07-02",
+  },
+  {
+    title: "Bank of England holds base rate at 3.75% in June",
+    summary:
+      "The Monetary Policy Committee voted 7-2 on 18 June to keep the base rate at 3.75%, with two members preferring a rise to 4%. Markets expect a further hold at the next meeting on 30 July.",
     source: "Bank of England",
     url: "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate",
     date: "2026-06-18",
-  },
-  {
-    title: "Lenders keep cutting fixed rates as product choice tops 7,000",
-    summary:
-      "Moneyfacts data shows residential mortgage choice above 7,000 deals for the first time since March, with the average two-year fix around 5.55% as several major lenders trimmed rates through late June.",
-    source: "Moneyfacts",
-    url: "https://moneyfactscompare.co.uk/mortgages/",
-    date: "2026-06-26",
-  },
-  {
-    title: "Zoopla: house prices up 1.4% as most regions return to growth",
-    summary:
-      "Zoopla's June index puts the average UK home at around £271,900 and reports every region except the South East is now flat or growing, with first-time buyers staying active.",
-    source: "Zoopla",
-    url: "https://www.zoopla.co.uk/discover/property-news/house-price-index/",
-    date: "2026-06-23",
-  },
-  {
-    title: "5% deposit mortgage choice hits highest level since 2008",
-    summary:
-      "The number of 95% loan-to-value deals has risen past 7,500 — the most since March 2008 — widening options for first-time buyers, with average 95% two-year fixes near 5.4%.",
-    source: "HomeOwners Alliance",
-    url: "https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/5-deposit-mortgages/",
-    date: "2026-06-20",
   },
 ];
 
