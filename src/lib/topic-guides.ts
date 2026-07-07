@@ -911,6 +911,96 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [1, 5, 10],
     publishDate: "2026-07-03",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 11. FIXED VS TRACKER MORTGAGE
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "fixed-vs-tracker-mortgage-uk",
+    guideTitle:
+      "Fixed vs tracker mortgage UK (2026): which should you pick?",
+    headline: "Fixed vs tracker mortgage: which is right for you?",
+    metaDescription:
+      "Fixed vs tracker mortgages explained for UK first-time buyers in 2026 — how each works, current rates, early repayment charges, and how to choose with confidence.",
+    intro:
+      "A fixed-rate mortgage locks your interest rate — and your monthly payment — for a set period, usually two or five years, so it can't change even if the Bank of England moves rates. A tracker follows the Bank of England base rate (3.75% as of July 2026) plus a fixed margin, so your payment falls when the base rate is cut and rises when it goes up. Most UK first-time buyers choose a fix for the budgeting certainty; a tracker can win if you expect rates to fall and value flexibility.",
+    sections: [
+      {
+        h2: "How does a fixed-rate mortgage work?",
+        paragraphs: [
+          "With a fixed rate, your interest rate is set at the start and stays exactly the same for the length of the deal — typically two or five years, though ten-year fixes exist. Your monthly payment is identical every month for that whole period, which makes budgeting simple and protects you completely if interest rates rise.",
+          "The trade-off is flexibility. Fixed deals almost always carry an early repayment charge (ERC) if you want to leave, overpay beyond a set limit (often 10% a year), or move home without porting the mortgage. ERCs commonly run from 1% to 5% of the balance and usually taper down each year. On a £250,000 mortgage a 3% ERC is £7,500, so a fix is a commitment for the full term.",
+          "When your fix ends you roll onto the lender's standard variable rate (SVR), which is typically much higher, so you'll normally remortgage onto a new deal a few months before it expires.",
+        ],
+        bullets: [
+          "Rate and monthly payment fixed for 2–5 years (sometimes longer)",
+          "Full protection if the base rate rises",
+          "Early repayment charge to exit early — often 1%–5% of the balance",
+          "Usually lets you overpay up to 10% a year penalty-free",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "How does a tracker mortgage work?",
+        paragraphs: [
+          "A tracker charges the Bank of England base rate plus a fixed margin set by the lender. If the base rate is 3.75% and your margin is 0.75%, you pay 4.50%. That margin never changes, but the base rate does — the Bank's Monetary Policy Committee reviews it eight times a year, and trackers usually adjust within a month of any change.",
+          "This means your payment can go down as well as up. If the base rate is cut by 0.25%, your rate falls to 4.25% on the example above and your monthly payment drops. If it rises, your payment rises with it — there's no cap unless the product specifically has one (a 'collar' or 'cap').",
+          "Many trackers have low or no early repayment charges, which is the other big draw: you can often remortgage onto a fix at any point without penalty. Always check the specific product, though, as some trackers do apply an ERC.",
+        ],
+        bullets: [
+          "Rate = Bank of England base rate + a fixed margin",
+          "Payment falls if the base rate is cut, rises if it climbs",
+          "Often no (or low) early repayment charge — check the product",
+          "No budgeting certainty: your payment can change several times a year",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "Which is cheaper right now?",
+        paragraphs: [
+          "There's no permanent winner — it depends on where rates go. In July 2026, with the base rate held at 3.75% since 18 June and markets expecting it to stay there for the rest of the year, fixed and tracker rates are fairly close. As a benchmark, the best first-time buyer two-year fixes sit around 4.67% at 90% loan-to-value (a 10% deposit) and near 4.4%–4.5% with a 15%–25% deposit; five-year fixes are broadly similar.",
+          "A tracker only beats a fix overall if the base rate falls far enough, fast enough, to offset the fact that trackers often start a little higher than the cheapest fixes. If the Bank cuts two or three times over your deal, a low-margin tracker with no exit penalty can work out cheaper — and you keep the freedom to switch to a fix if the outlook changes. If rates stay flat or rise, the certainty of a fix looks smart in hindsight.",
+          "Because nobody can reliably predict the base rate, the honest answer is to choose based on your own finances and how much payment uncertainty you can live with — not on a forecast.",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "How to choose: a simple decision framework",
+        paragraphs: [
+          "Start with your budget. If a rate rise of one or two percentage points would genuinely stretch you, the certainty of a fixed rate is usually worth it — you'll always know exactly what leaves your account. Most first-time buyers are in this position, which is why the large majority pick a fix.",
+          "Consider a tracker if you have breathing room in your budget, you think rates are more likely to fall than rise, or you may want to move, overpay heavily, or remortgage soon and don't want to be tied in by an early repayment charge. A tracker's flexibility is most valuable when your plans are uncertain.",
+          "Whichever way you lean, a whole-of-market mortgage broker is worth using. They can compare fixed and tracker products across the market, factor in fees (not just the headline rate), and flag any that let you switch from tracker to fixed without penalty — a useful hedge. For first-time buyers, brokers are usually free, paid by the lender on completion.",
+        ],
+        bullets: [
+          "Tight budget or rate rise would hurt? Lean fixed.",
+          "Comfortable budget and expect cuts? A tracker may pay off.",
+          "Might move or overpay soon? Value a tracker's low exit penalty.",
+          "Compare total cost including fees, not just the headline rate.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a fixed or tracker mortgage better in 2026?",
+        a: "Neither is universally better — it depends on your finances and your view on rates. With the base rate held at 3.75% in mid-2026 and expected to stay there for now, most first-time buyers still choose a fix for the payment certainty. A tracker can be cheaper if the base rate falls during your deal and you value the flexibility to switch, but it exposes you to rises.",
+      },
+      {
+        q: "Can I switch from a tracker to a fixed rate later?",
+        a: "Usually yes. Many trackers have no early repayment charge, so you can remortgage onto a fixed deal at any time — handy if rates start rising and you want to lock in. Always check your specific product first, as a minority of trackers do apply an exit charge.",
+      },
+      {
+        q: "What happens to a fixed rate when the deal ends?",
+        a: "You roll onto the lender's standard variable rate (SVR), which is typically much higher than your fixed rate. To avoid this, start looking to remortgage roughly three to six months before your fix ends so a new deal is ready to begin the moment the old one expires.",
+      },
+      {
+        q: "Does a tracker follow my lender or the Bank of England?",
+        a: "A true tracker follows the Bank of England base rate plus a fixed margin, so changes are driven by the Monetary Policy Committee, not your lender's discretion. That's different from a discounted variable or SVR, where the lender sets and changes the rate itself and doesn't have to pass on base rate cuts in full.",
+      },
+    ],
+    relatedStageIds: [1, 4],
+    publishDate: "2026-07-07",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {

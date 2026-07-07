@@ -52,6 +52,7 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
   name: "Clinkeys",
+  alternateName: ["Clinksy", "Clinkys", "Clinkeys UK", "Clink Keys"],
   url: SITE_URL,
   logo: `${SITE_URL}/icon.svg`,
   description:

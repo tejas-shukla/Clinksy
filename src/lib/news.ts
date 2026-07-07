@@ -19,43 +19,43 @@ export const NEWS_ITEMS: NewsItem[] = [
     title:
       "Nationwide: annual house price growth picks up to 2.2% in June",
     summary:
-      "Nationwide's index shows annual growth rising to 2.2% in June from 1.7% in May, with the average price at £277,484. Prices were broadly flat month-on-month; Northern Ireland remained the strongest region.",
+      "Nationwide's index shows annual growth rising to 2.2% in June from 1.7% in May, with the average price at £277,484. Prices were broadly flat month-on-month; Northern Ireland remained the strongest region at 8.6% a year.",
     source: "Nationwide",
     url: "https://www.nationwide.co.uk/media/hpi/reports/annual-house-price-growth-edges-higher-in-june",
     date: "2026-07-01",
   },
   {
-    title: "Mortgage approvals fall to lowest level since late 2023",
+    title: "Bank of England holds base rate at 3.75% in June",
     summary:
-      "Bank of England data shows house-purchase approvals dropped to 56,205 in May, down from 66,034 in April, while net mortgage borrowing fell to £2.9bn — signs of a cooling market as buyers weigh affordability.",
-    source: "Bank of England",
-    url: "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/may-2026",
-    date: "2026-06-30",
+      "The Monetary Policy Committee voted 7-2 on 18 June to keep the base rate at 3.75%, with two members preferring a rise to 4%. As of early July, markets expected the Bank to hold rates for the rest of the year.",
+    source: "MoneySavingExpert",
+    url: "https://www.moneysavingexpert.com/news/2026/06/base-rate-held-bank-of-england/",
+    date: "2026-06-18",
   },
   {
     title:
       "Average asking price falls 0.6% in June — biggest June drop in 14 years",
     summary:
-      "Rightmove's House Price Index shows new sellers cut the average asking price to £376,191, now 0.5% below a year ago, as record supply for the time of year forces sharper pricing.",
+      "Rightmove's House Price Index shows new sellers cut the average asking price by £2,113 to £376,191, now 0.5% below a year ago, as record supply for the time of year forces sharper pricing.",
     source: "Rightmove",
     url: "https://www.rightmove.co.uk/news/house-price-index/",
-    date: "2026-06-15",
+    date: "2026-06-16",
   },
   {
-    title: "First-time buyer fixed rates dip below 4.7% at 90% LTV",
+    title: "Best first-time buyer fix at 90% LTV sits at 4.67% in July",
     summary:
-      "The lowest two-year fix for buyers with a 10% deposit has fallen to 4.69% (Coventry BS), with a five-year fix at 4.62%, as lenders keep trimming first-time buyer pricing through early July.",
+      "HomeOwners Alliance data shows the best two-year fix for a 10% deposit at 4.67% and the best five-year fix at 4.62%, while 95% (5% deposit) rates start from 5.20%, as lenders keep trimming pricing.",
     source: "HomeOwners Alliance",
     url: "https://hoa.org.uk/first-time-buyer-mortgage-rates/",
     date: "2026-07-02",
   },
   {
-    title: "Bank of England holds base rate at 3.75% in June",
+    title: "Energy-efficient homes fetch a modest price premium — Nationwide",
     summary:
-      "The Monetary Policy Committee voted 7-2 on 18 June to keep the base rate at 3.75%, with two members preferring a rise to 4%. Markets expect a further hold at the next meeting on 30 July.",
-    source: "Bank of England",
-    url: "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate",
-    date: "2026-06-18",
+      "Nationwide research found homes rated EPC A or B sell for about 1.6% (roughly £4,500) more than a comparable D-rated home, while F or G-rated homes sell for about 1.4% less. The effect is far larger for buy-to-let.",
+    source: "Nationwide",
+    url: "https://www.nationwide.co.uk/media/hpi/reports/energy-efficiency-ratings-have-limited-impact-on-owner-occupied-house-prices-despite-increased-interest-in-going-green",
+    date: "2026-07-01",
   },
 ];
 
