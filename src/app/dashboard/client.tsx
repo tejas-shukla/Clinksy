@@ -361,20 +361,6 @@ function TodayTab({
         <span className="text-ink/30">→</span>
       </button>
 
-      {/* AI guide */}
-      <div className="rounded-2xl border border-ink/10 bg-bone-50 p-5">
-        <div className="flex items-center gap-3">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-accent-50 text-accent-500">
-            <SparkIcon />
-          </span>
-          <div>
-            <p className="font-medium text-ink">Ask your guide anything</p>
-            <p className="text-sm text-ink/50">Costs, next steps, what to watch out for</p>
-          </div>
-        </div>
-        <div className="mt-4">
-        </div>
-      </div>
     </div>
   );
 }
