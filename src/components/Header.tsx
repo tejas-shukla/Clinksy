@@ -7,7 +7,6 @@ import { ClinkeysMark } from "@/components/ClinkeysMark";
 const NAV_LINKS = [
   { label: "Blog", href: "/blog" },
   { label: "Guides", href: "/guides" },
-  { label: "Dashboard", href: "/dashboard" },
   { label: "Advisors", href: "/advisor-portal" },
 ];
 
