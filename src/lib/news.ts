@@ -17,45 +17,48 @@ export type NewsItem = {
 export const NEWS_ITEMS: NewsItem[] = [
   {
     title:
-      "Nationwide: annual house price growth picks up to 2.2% in June",
+      "Rightmove urges government to scrap stamp duty for first-time buyers",
     summary:
-      "Nationwide's index shows annual growth rising to 2.2% in June from 1.7% in May, with the average price at £277,484. Prices were broadly flat month-on-month; Northern Ireland remained the strongest region at 8.6% a year.",
-    source: "Nationwide",
-    url: "https://www.nationwide.co.uk/media/hpi/reports/annual-house-price-growth-edges-higher-in-june",
-    date: "2026-07-01",
-  },
-  {
-    title: "Bank of England holds base rate at 3.75% in June",
-    summary:
-      "The Monetary Policy Committee voted 7-2 on 18 June to keep the base rate at 3.75%, with two members preferring a rise to 4%. As of early July, markets expected the Bank to hold rates for the rest of the year.",
-    source: "MoneySavingExpert",
-    url: "https://www.moneysavingexpert.com/news/2026/06/base-rate-held-bank-of-england/",
-    date: "2026-06-18",
+      "Rightmove called on the government to remove stamp duty for first-time buyers on both new-build and resale homes in the Autumn Budget, citing an average mortgage rate of 4.92% and an average new-build price of £393,000. Barratt Redrow backed a new government-and-developer support scheme.",
+    source: "Mortgage Solutions",
+    url: "https://www.mortgagesolutions.co.uk/mortgage-news/2026/07/10/removal-of-stamp-duty-could-improve-ftb-access-to-new-builds-rightmove/",
+    date: "2026-07-10",
   },
   {
     title:
-      "Average asking price falls 0.6% in June — biggest June drop in 14 years",
+      "House prices rose 0.2% in June — first monthly rise in four months",
     summary:
-      "Rightmove's House Price Index shows new sellers cut the average asking price by £2,113 to £376,191, now 0.5% below a year ago, as record supply for the time of year forces sharper pricing.",
-    source: "Rightmove",
-    url: "https://www.rightmove.co.uk/news/house-price-index/",
-    date: "2026-06-16",
+      "The Lloyds House Price Index (formerly Halifax) reported a 0.2% monthly rise in June, the first increase in four months, taking the typical home to £299,330. Nationwide's index put annual growth at 2.2%, with prices broadly flat on the month.",
+    source: "Lloyds",
+    url: "https://www.lloydsbank.com/media-centre/house-price-index.html",
+    date: "2026-07-07",
   },
   {
-    title: "Best first-time buyer fix at 90% LTV sits at 4.67% in July",
+    title:
+      "Mortgage price war continues as lenders keep cutting fixed rates in July",
     summary:
-      "HomeOwners Alliance data shows the best two-year fix for a 10% deposit at 4.67% and the best five-year fix at 4.62%, while 95% (5% deposit) rates start from 5.20%, as lenders keep trimming pricing.",
+      "Nationwide cut selected fixed rates for a fourth time in a month and Yorkshire Building Society trimmed deals twice in a week, as lenders compete despite the base rate being held at 3.75%. Markets expect no change at the Bank of England's 30 July meeting.",
     source: "HomeOwners Alliance",
-    url: "https://hoa.org.uk/first-time-buyer-mortgage-rates/",
-    date: "2026-07-02",
+    url: "https://hoa.org.uk/best-mortgage-rates/",
+    date: "2026-07-13",
   },
   {
-    title: "Energy-efficient homes fetch a modest price premium — Nationwide",
+    title:
+      "First-Time Buyer ISA consultation open until 18 August",
     summary:
-      "Nationwide research found homes rated EPC A or B sell for about 1.6% (roughly £4,500) more than a comparable D-rated home, while F or G-rated homes sell for about 1.4% less. The effect is far larger for buy-to-let.",
-    source: "Nationwide",
-    url: "https://www.nationwide.co.uk/media/hpi/reports/energy-efficiency-ratings-have-limited-impact-on-owner-occupied-house-prices-despite-increased-interest-in-going-green",
-    date: "2026-07-01",
+      "The government is consulting on the new First-Time Buyer ISA that will replace the Lifetime ISA for house purchases. Proposals include no upper age limit, no 25% withdrawal penalty on savers' own money, and a bonus paid at purchase; the new product is expected around April 2028.",
+    source: "GOV.UK",
+    url: "https://www.gov.uk/government/consultations/first-time-buyer-isa-consultation",
+    date: "2026-06-23",
+  },
+  {
+    title:
+      "MPs call for stamp duty reform to help first-time buyers onto the ladder",
+    summary:
+      "The cross-party Housing, Communities and Local Government Committee recommended the government consult on alternatives to stamp duty by the end of 2026, and warned the new First-Time Buyer ISA should avoid a static property price cap that could make it unusable in some regions.",
+    source: "UK Parliament",
+    url: "https://committees.parliament.uk/committee/17/housing-communities-and-local-government-committee/news/214163/reform-stamp-duty-to-help-get-firsttime-buyers-on-the-housing-ladder-says-housing-committee/",
+    date: "2026-06-09",
   },
 ];
 

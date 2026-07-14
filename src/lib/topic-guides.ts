@@ -1001,6 +1001,181 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [1, 4],
     publishDate: "2026-07-07",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 12. HOW TO IMPROVE YOUR MORTGAGE APPROVAL ODDS
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "improve-mortgage-approval-odds-uk",
+    guideTitle:
+      "How to improve your mortgage approval odds (UK, 2026)",
+    headline: "How to improve your chances of getting a mortgage approved",
+    metaDescription:
+      "A practical UK guide for first-time buyers: the steps that actually improve your mortgage approval odds, from your credit file to your deposit and bank statements.",
+    intro:
+      "To improve your mortgage approval odds in the UK, focus on the three things lenders check hardest: a clean, up-to-date credit file, provable and stable income, and affordable spending in the three to six months before you apply. Register on the electoral roll, avoid taking on new credit, keep your bank statements tidy, and use a whole-of-market broker to match you to a lender whose rules fit your situation. Most people can see a meaningful difference within three to six months.",
+    sections: [
+      {
+        h2: "What do UK lenders actually check?",
+        paragraphs: [
+          "There is no single national credit score that decides your mortgage. Each lender builds its own risk picture from your credit file, your income, your deposit, the property itself, and how the application is put together. Affordability usually carries more weight than a headline score — lenders care most about whether you can sustainably keep up the repayments.",
+          "Affordability in the UK sits in layers. The Bank of England's Financial Policy Committee sets a loan-to-income flow limit that caps lending at 4.5 times income or above to 15% of each lender's new mortgages in a quarter. The Financial Conduct Authority sets the conduct rules, including a forward-looking stress test that checks you could still pay if rates rose. In 2026, after the FCA reaffirmed flexibility in those rules, several major lenders now offer up to 5.5 times income as standard, and some go higher for specific borrower profiles.",
+          "The practical takeaway: two lenders can look at the same application and reach different decisions. That is why a rejection from one bank does not mean you cannot get a mortgage — it often means you applied to the wrong lender.",
+        ],
+        bullets: [
+          "Your credit file and repayment history",
+          "Provable, stable income (payslips, tax calculations for the self-employed)",
+          "Your committed outgoings and recent spending",
+          "Deposit size and the resulting loan-to-value",
+          "The property type, condition and construction",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "How can I improve my credit file before applying?",
+        paragraphs: [
+          "Start at least three to six months before you plan to apply — that is roughly how long it takes for positive changes to show and for lenders to see a settled pattern. Check all three UK credit reference agencies (Experian, Equifax and TransUnion), because lenders use different ones and errors on any of them can hold you back.",
+          "The single easiest win is getting on the electoral roll at your current address: it confirms your identity and is quick to fix. Beyond that, pay every bill on time, bring credit-card balances down (using less than about 30% of your limit helps), and correct any mistakes or add a notice of correction where something needs explaining.",
+        ],
+        bullets: [
+          "Register to vote at your current address on the electoral roll",
+          "Check Experian, Equifax and TransUnion and dispute any errors",
+          "Pay everything on time — set up direct debits so nothing slips",
+          "Keep credit-card balances below roughly 30% of the limit",
+          "Avoid closing old, well-managed accounts just before applying",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "What should I avoid in the run-up to applying?",
+        paragraphs: [
+          "The months before you apply matter more than most buyers realise. Lenders typically scrutinise your last three to six months of bank statements closely, so treat that window as your audit period. Avoid anything that makes you look stretched or that reduces how much you can borrow.",
+          "Do not take on new credit — a car finance deal, a new phone contract on finance, or a fresh credit card can all cut your affordability at exactly the wrong moment and leave a hard search on your file. Steer clear of unauthorised overdrafts, gambling transactions, and payday loans, all of which lenders view poorly. If someone is gifting you deposit money, get it into your account early with a signed gift letter, because last-minute large deposits raise anti-money-laundering questions.",
+        ],
+        bullets: [
+          "Don't apply for new loans, cards or 'buy now, pay later' before your mortgage",
+          "Avoid unarranged overdrafts and returned direct debits",
+          "Cut back on visible gambling spend in the months before applying",
+          "Bank a gifted deposit early with a proper gift letter",
+          "Don't change jobs mid-application if you can help it — lenders like stability",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "Does a bigger deposit or a broker help more?",
+        paragraphs: [
+          "Both help, in different ways. A larger deposit lowers your loan-to-value, which unlocks lower interest rates and widens the pool of lenders willing to say yes. Crossing a threshold — for example moving from a 5% deposit to 10%, or from 10% to 15% — often has more impact on your rate and approval odds than a small credit-score improvement. On a £250,000 home, 5% is £12,500, 10% is £25,000 and 15% is £37,500.",
+          "A whole-of-market mortgage broker improves your odds by matching you to a lender whose criteria fit your circumstances — self-employed income, a new job, a smaller deposit or a past credit blip. Because they can see deals across the market and know each lender's rules, they help you avoid wasted applications and the hard credit searches that come with them. For first-time buyers, brokers are often free, as they are paid by the lender on completion.",
+          "Finally, always get an Agreement in Principle (also called a Decision in Principle) before you house-hunt. It is a soft-check indication of what a lender would lend, it does not harm your credit file, and it shows sellers you are a serious, ready buyer.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+    ],
+    faqs: [
+      {
+        q: "What credit score do I need for a mortgage in the UK?",
+        a: "There is no universal minimum — each lender uses its own scoring model, and there is no single national number. A strong, clean credit file with no missed payments and low balances matters far more than any one score. Affordability and deposit size often weigh more heavily than the score itself.",
+      },
+      {
+        q: "How long before applying should I start improving my chances?",
+        a: "Ideally three to six months. That gives time for positive changes — being on the electoral roll, paying down balances, keeping statements clean — to register on your credit file and for lenders to see a settled, stable pattern rather than a last-minute scramble.",
+      },
+      {
+        q: "Will being rejected by one lender hurt future applications?",
+        a: "A rejection itself is not recorded on your credit file, but the hard search that came with it is, and several hard searches in a short time can look like you're chasing credit. This is exactly why a whole-of-market broker helps — they match you to a suitable lender first so you avoid repeated failed applications.",
+      },
+      {
+        q: "Can I get a mortgage as a first-time buyer with a 5% deposit?",
+        a: "Yes. 5% deposit mortgages are widely available in 2026, helped by the government's Mortgage Guarantee Scheme. You'll usually pay a higher interest rate than with a 10% or 15% deposit, so if you can save a little more before applying, it can noticeably cut your monthly cost.",
+      },
+    ],
+    relatedStageIds: [1, 4],
+    publishDate: "2026-07-10",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 13. GAZUMPING
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "gazumping-uk",
+    guideTitle: "Gazumping UK: What It Is & How to Avoid It",
+    headline: "Gazumping: what it is, why it's legal, and how to protect yourself",
+    metaDescription:
+      "Gazumping is when a seller accepts a higher offer after accepting yours. Learn why it's legal in England and Wales, and 6 practical ways to avoid it.",
+    intro:
+      "Gazumping is when a seller accepts your offer on a property, then accepts a higher (or otherwise better) offer from another buyer before contracts are exchanged. It is legal in England, Wales and Northern Ireland because an accepted offer is not binding until exchange — typically 8 to 12 weeks later. You can't eliminate the risk, but you can cut it sharply by getting the property taken off the market, moving fast on your mortgage, survey and conveyancing, and in some cases signing a lock-out agreement.",
+    sections: [
+      {
+        h2: "What is gazumping and why does it happen?",
+        paragraphs: [
+          "In England, Wales and Northern Ireland, having an offer accepted creates no legal commitment on either side. The sale only becomes binding when contracts are exchanged, which usually happens 8 to 12 weeks after the offer is accepted — sometimes longer if there's a chain or conveyancing delays. During that whole window, the seller is free to accept a better offer from someone else.",
+          "Gazumping is most common when prices are rising quickly or when a sale drags on. A rival buyer might offer more money, but sellers also switch for speed: a chain-free buyer with cash or a mortgage ready to go can 'gazump' you even with a similar offer. Estate agents are legally required to pass every offer to the seller right up until exchange, so interest from other buyers doesn't stop just because your offer was accepted.",
+          "The financial sting is real. By the time a purchase falls through you may have already paid for a survey, conveyancing searches and mortgage arrangement — several hundred to a few thousand pounds that you generally cannot recover from the seller.",
+        ],
+        relatedStageIds: [3, 8],
+      },
+      {
+        h2: "Is gazumping legal in the UK?",
+        paragraphs: [
+          "Yes — in England, Wales and Northern Ireland gazumping is legal, however frustrating it feels. Until written contracts are exchanged, an accepted offer is only an agreement in principle ('subject to contract'), and the seller can walk away or take a better offer without penalty. There is no law against it, and successive proposals to ban it have never made it into legislation.",
+          "Scotland is different. There, once the seller's solicitor accepts an offer and missives (the contract letters) are concluded, the deal is legally binding — and this typically happens much earlier in the process than exchange does in England. Scottish solicitors' professional rules also generally prevent them from acting for a seller who tries to accept a rival offer after one has been accepted. Gazumping in Scotland is therefore rare, though not strictly impossible before missives are concluded.",
+        ],
+        relatedStageIds: [3, 5],
+      },
+      {
+        h2: "How do I avoid being gazumped?",
+        paragraphs: [
+          "You can't remove the risk entirely in England and Wales, but the single biggest factor is time: the shorter the gap between offer acceptance and exchange, the less opportunity there is for a rival bid. Practical steps that make a real difference:",
+        ],
+        bullets: [
+          "Make taking the property off the market a condition of your offer — ask the agent to remove the listing and mark it 'sold subject to contract' (SSTC), and check the listing actually comes down",
+          "Have a mortgage in principle before you offer, so your full application can start the same week",
+          "Instruct your solicitor or conveyancer before your offer is accepted, so searches begin immediately",
+          "Book your survey as soon as the offer is accepted — waiting weeks for a surveyor is a classic source of fatal delay",
+          "Respond to every solicitor query the same day and chase progress weekly so the sale keeps momentum",
+          "Consider a lock-out agreement (see below) for extra protection on a purchase you really don't want to lose",
+        ],
+        relatedStageIds: [1, 5, 6],
+      },
+      {
+        h2: "What is a lock-out agreement?",
+        paragraphs: [
+          "A lock-out agreement (also called an exclusivity agreement) is a legally binding contract in which the seller agrees not to negotiate with or accept offers from anyone else for a fixed period — commonly four to eight weeks. That window is designed to give you enough time to complete your survey, searches and mortgage application and reach exchange without being outbid.",
+          "It doesn't force the seller to sell to you; it only takes the property off the table for other buyers during the exclusivity period. If the seller breaches it, you can claim back your wasted costs. Lock-out agreements are not standard practice — a solicitor needs to draft one, which adds cost, and not every seller will agree — but they're worth raising on a purchase where you'd be badly exposed, such as after paying for an expensive survey on an unusual property.",
+        ],
+        relatedStageIds: [5, 8],
+      },
+      {
+        h2: "What should I do if I've been gazumped?",
+        paragraphs: [
+          "First, find out from the agent exactly what the rival offer is — not just the price, but the buyer's position. If they're in a long chain and you're not, you may be able to keep the deal by emphasising speed and certainty rather than matching the money. Sellers regularly stick with a slightly lower offer from a buyer who can definitely proceed.",
+          "If you do consider increasing your offer, set a hard ceiling based on what the property is worth to you and what your lender will support — a higher price can mean a down-valuation and a bigger deposit requirement. Sometimes the right call is to walk away and put your money towards the next purchase rather than an emotional bidding war.",
+          "You can also insure against the costs in advance. Home buyer protection insurance typically costs roughly £50 to £100, and reimburses a chunk of your conveyancing, survey and mortgage fees if the purchase falls through due to gazumping or other specified reasons. Buy it when your offer is accepted, not after things go wrong.",
+        ],
+        relatedStageIds: [3, 6],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is gazumping illegal in the UK?",
+        a: "No. In England, Wales and Northern Ireland gazumping is legal because an accepted offer is not binding until contracts are exchanged. In Scotland the system is different: offers accepted through solicitors become binding once missives are concluded, which makes gazumping rare there.",
+      },
+      {
+        q: "Can I sue the seller or get my money back if I'm gazumped?",
+        a: "Generally no — because there's no binding contract before exchange, the seller owes you nothing, and survey, search and legal fees are usually lost. The exceptions are if you had a signed lock-out agreement the seller breached, or if you bought home buyer protection insurance, which reimburses specified costs when a purchase falls through.",
+      },
+      {
+        q: "Does 'sold subject to contract' stop gazumping?",
+        a: "It reduces it but doesn't prevent it. 'Sold subject to contract' signals the property is under offer, but the sale still isn't binding, and agents must by law pass on any new offers to the seller until exchange. Getting the listing removed entirely is stronger than an SSTC label on a live listing.",
+      },
+      {
+        q: "What is gazundering?",
+        a: "Gazundering is the reverse tactic: the buyer lowers their offer late in the process, often just before exchange, when the seller is under pressure to accept rather than restart the sale. Like gazumping, it's legal in England and Wales because nothing is binding until contracts are exchanged.",
+      },
+    ],
+    relatedStageIds: [2, 3, 5, 8],
+    publishDate: "2026-07-14",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {
