@@ -324,8 +324,8 @@ function TodayTab({
               <p className="text-sm text-ink/50">Conveyancing · lender panel · fixed fee</p>
             </div>
           </div>
-          <Link href="/dashboard?stage=5" className="text-sm font-medium text-accent-500 hover:underline underline-offset-2">
-            Compare →
+          <Link href="/match?role=SOLICITOR" className="text-sm font-medium text-accent-500 hover:underline underline-offset-2">
+            Get matched →
           </Link>
         </div>
       )}
@@ -339,8 +339,8 @@ function TodayTab({
               <p className="text-sm text-ink/50">Level 2 or Level 3 · RICS accredited</p>
             </div>
           </div>
-          <Link href="/dashboard?stage=6" className="text-sm font-medium text-accent-500 hover:underline underline-offset-2">
-            Compare →
+          <Link href="/match?role=SURVEYOR" className="text-sm font-medium text-accent-500 hover:underline underline-offset-2">
+            Get matched →
           </Link>
         </div>
       )}
@@ -415,6 +415,26 @@ function MortgageTab({
               </div>
               <span className="text-bone/60">→</span>
             </Link>
+          )}
+
+          {!selectedAdvisor && (
+            <div className="flex items-center justify-between rounded-2xl border border-ink/10 bg-bone-50 px-5 py-4">
+              <div className="flex items-center gap-3">
+                <span className="text-xl">🤝</span>
+                <div>
+                  <p className="font-medium text-ink">Or let us match you</p>
+                  <p className="text-sm text-ink/50">
+                    Tell us your situation — we&apos;ll pair you with a verified advisor who fits
+                  </p>
+                </div>
+              </div>
+              <Link
+                href="/match?role=MORTGAGE_ADVISOR"
+                className="text-sm font-medium text-accent-500 hover:underline underline-offset-2"
+              >
+                Get matched →
+              </Link>
+            </div>
           )}
 
           {/* Application status */}

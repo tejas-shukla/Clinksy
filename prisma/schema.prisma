@@ -1,0 +1,153 @@
+// Clinkeys — professional matching schema
+// Covers mortgage advisors, solicitors/conveyancers and surveyors.
+// See Clinkeys_Professional_Matching_Spec.docx for the product spec.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ProfessionalRole {
+  MORTGAGE_ADVISOR
+  SOLICITOR
+  SURVEYOR
+}
+
+enum ProfessionalStatus {
+  PENDING_VERIFICATION // signed up, registration number not yet checked
+  ACTIVE
+  PAUSED // manual pause or auto-pause after consecutive timeouts
+  REJECTED
+}
+
+enum MatchRequestStatus {
+  OPEN // still working through the candidate pool
+  MATCHED // a professional accepted
+  UNMATCHED // pool exhausted, flagged to ops
+  CANCELLED
+}
+
+enum AssignmentStatus {
+  PENDING // offered, waiting for accept/decline
+  ACCEPTED
+  DECLINED
+  EXPIRED // 24h timeout
+}
+
+model Professional {
+  id        String             @id @default(cuid())
+  role      ProfessionalRole
+  status    ProfessionalStatus @default(PENDING_VERIFICATION)
+  name      String
+  firmName  String?
+  email     String
+  phone     String?
+  createdAt DateTime           @default(now())
+  updatedAt DateTime           @updatedAt
+
+  // Verification — FCA number (advisor), SRA/CLC number (solicitor), RICS number (surveyor)
+  registrationNumber String
+  registrationBody   String // "FCA" | "SRA" | "CLC" | "RICS"
+  ricsGrade          String? // AssocRICS | MRICS | FRICS
+
+  // Coverage
+  basePostcode   String? // outward code, e.g. "SW1A"
+  coverageAreas  String[] // postcode areas/districts served, e.g. ["SW", "SE", "BR"]
+  nationwide     Boolean  @default(false) // advisors: remote, national coverage
+  coverageRadius Int? // surveyors: miles from base postcode
+  jurisdiction   String? // solicitors: "ENGLAND_WALES" | "SCOTLAND" | "NORTHERN_IRELAND"
+
+  // Specialisations (see src/lib/matching/criteria.ts for allowed values per role)
+  specialisations String[]
+
+  // Advisor-specific
+  wholeOfMarket   Boolean? // vs restricted panel
+  panelLenders    String[] // if restricted
+  feeModel        String? // "FEE_FREE" | "FIXED" | "PERCENTAGE"
+  appointmentMode String? // "REMOTE" | "IN_PERSON" | "BOTH"
+
+  // Solicitor-specific
+  lenderPanels     String[] // lenders whose panel they're on
+  cqsAccredited    Boolean?
+  feeStructure     String? // "FIXED" | "NO_SALE_NO_FEE"
+
+  // Surveyor-specific
+  surveyTypes        String[] // "LEVEL_1" | "LEVEL_2" | "LEVEL_3" | "VALUATION" | "SNAGGING"
+  turnaroundDays     Int?
+
+  languages          String[] @default(["English"])
+  weeklyCapacity     Int      @default(5)
+
+  // Reliability tracking (drives ranking + auto-pause)
+  consecutiveTimeouts Int   @default(0)
+  totalAccepted       Int   @default(0)
+  totalDeclined       Int   @default(0)
+  totalExpired        Int   @default(0)
+  ratingSum           Int   @default(0)
+  ratingCount         Int   @default(0)
+
+  assignments Assignment[]
+
+  @@unique([email, role])
+  @@index([role, status])
+}
+
+model MatchRequest {
+  id        String             @id @default(cuid())
+  role      ProfessionalRole // which kind of professional the buyer needs
+  status    MatchRequestStatus @default(OPEN)
+  createdAt DateTime           @default(now())
+  updatedAt DateTime           @updatedAt
+
+  // Buyer details
+  buyerName  String
+  buyerEmail String
+  buyerPhone String?
+
+  // Property / situation
+  propertyPostcode String
+  propertyPrice    Int?
+  buyerType        String? // "FIRST_TIME" | "MOVER" | "BTL" | "REMORTGAGE"
+  employmentType   String? // "EMPLOYED" | "SELF_EMPLOYED" | "CONTRACTOR" | "DIRECTOR"
+  depositPercent   Int?
+  creditIssues     Boolean  @default(false)
+  schemeUsage      String? // e.g. "SHARED_OWNERSHIP"
+  lender           String? // drives solicitor panel filter
+  surveyType       String? // for surveyor requests
+  timeline         String?
+  language         String?
+  appointmentMode  String? // buyer preference
+  notes            String?
+
+  assignments Assignment[]
+
+  @@index([status])
+}
+
+model Assignment {
+  id        String           @id @default(cuid())
+  status    AssignmentStatus @default(PENDING)
+  createdAt DateTime         @default(now())
+
+  matchRequestId String
+  matchRequest   MatchRequest @relation(fields: [matchRequestId], references: [id])
+
+  professionalId String
+  professional   Professional @relation(fields: [professionalId], references: [id])
+
+  rank          Int // position in the ranked candidate list at match time
+  score         Float // ranking score at match time
+  offeredAt     DateTime  @default(now())
+  expiresAt     DateTime // offeredAt + 24h
+  remindedAt    DateTime? // 12h reminder sent
+  respondedAt   DateTime?
+  declineReason String?
+
+  // one offer per professional per request
+  @@unique([matchRequestId, professionalId])
+  @@index([status, expiresAt])
+}

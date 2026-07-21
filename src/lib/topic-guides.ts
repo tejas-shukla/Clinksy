@@ -1176,6 +1176,92 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [2, 3, 5, 8],
     publishDate: "2026-07-14",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 14. SHARED OWNERSHIP STAIRCASING
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "shared-ownership-staircasing-uk",
+    guideTitle: "Shared Ownership Staircasing UK: Costs & Rules 2026",
+    headline:
+      "Staircasing your Shared Ownership home: how it works and what it really costs",
+    metaDescription:
+      "Staircasing lets you buy bigger shares of your Shared Ownership home. How it works in 2026, the 1% gradual rule, typical costs and the 80% stamp duty trigger.",
+    intro:
+      "Staircasing is the process of buying additional shares in your Shared Ownership home, so you own more of it and pay less rent. Each extra share is priced at the property's current market value, and on newer leases (from the 2021 model onwards) you can buy as little as 1% a year for the first 15 years. Expect roughly £1,000–£2,000 in valuation, legal and mortgage costs on top of the share price for a standard staircasing transaction.",
+    sections: [
+      {
+        h2: "What is staircasing and how does it work?",
+        paragraphs: [
+          "When you buy a Shared Ownership home you purchase an initial share — typically between 10% and 75% — and pay rent to a housing association on the rest. Staircasing lets you increase that share over time, in steps, potentially all the way to 100%. Every extra share you buy reduces your rent proportionally: go from 40% to 60% and the rent on the unsold share drops by a third.",
+          "The price of each new share is based on what your home is worth at the time you buy it, not what you paid originally. You'll normally need a valuation from a RICS-registered surveyor, which is typically valid for around three months — so once you have it, the transaction needs to move quickly. If your home has risen in value, staircasing gets more expensive; if prices have fallen, it gets cheaper.",
+          "The exact rules live in your lease, and they differ by generation. Leases issued under the newer model (from the Affordable Homes Programme 2021–2026 onwards) allow standard staircasing in steps as small as 5%. Many older leases set a 10% or 25% minimum per transaction, and some limit the total number of staircasing transactions — commonly three. The first step is always the same: dig out your lease or ask your housing association exactly what your terms allow.",
+        ],
+        relatedStageIds: [1, 5],
+      },
+      {
+        h2: "How much does staircasing cost?",
+        paragraphs: [
+          "Beyond the price of the share itself, budget for a cluster of fees. Most people find the process costs in the region of £1,000–£2,000 on top of the share price, though it varies with location and how you fund the purchase.",
+        ],
+        bullets: [
+          "RICS valuation: roughly £150–£500, and you'll need a fresh one if the transaction takes longer than the validity period (usually about three months)",
+          "Legal/conveyancing fees: typically £350–£1,000 for the solicitor work to transfer the additional share",
+          "Mortgage costs: if you fund the share by borrowing more, you may face a further advance fee, remortgage fees or a new product fee — and possibly a higher rate",
+          "Landlord administration fee: some housing associations charge one for standard staircasing (check your lease)",
+          "Stamp duty: possibly, once your total share goes above 80% — see below",
+        ],
+        relatedStageIds: [1, 5, 10],
+      },
+      {
+        h2: "What is 1% gradual staircasing?",
+        paragraphs: [
+          "If your lease was issued under the government's newer Shared Ownership model (used for homes funded by the Affordable Homes Programme 2021–2026), you can buy an extra 1% share each year for the first 15 years of ownership. This 'gradual staircasing' route is designed to be cheap: the share price is set using the House Price Index rather than a full RICS valuation, so there's no valuation fee, and your landlord can't charge an administration fee for it.",
+          "One percent a year won't get you to 100% on its own, but it steadily cuts your rent and grows your equity without the transaction costs that make small staircasing steps poor value on older leases. You can still make larger standard staircasing purchases (5% or more) alongside it whenever your finances allow.",
+          "If you bought before the new model was introduced, gradual staircasing almost certainly isn't in your lease — but it's worth asking your housing association whether they offer anything similar voluntarily.",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "Do I pay stamp duty when I staircase?",
+        paragraphs: [
+          "It depends on a choice you (or your solicitor) made when you first bought. Shared Ownership buyers in England can either pay Stamp Duty Land Tax on the full market value of the home upfront (a 'market value election') or pay in stages as they staircase.",
+          "If you made the market value election at the start, staircasing transactions afterwards trigger no further stamp duty — you've already paid on the whole value. First-time buyers often choose this route because first-time buyer relief (no SDLT on the first £300,000) can wipe out the bill entirely.",
+          "If you chose to pay in stages, there's no stamp duty on staircasing transactions until your total share goes above 80%. Once you cross 80%, SDLT rules kick in for that transaction and any further ones, and each has its own return and 14-day filing deadline. The calculations for staged payments are genuinely fiddly, so this is one area where your conveyancer earns their fee — ask them to model both routes before you commit.",
+        ],
+        relatedStageIds: [5, 10],
+      },
+      {
+        h2: "Is staircasing to 100% worth it?",
+        paragraphs: [
+          "Owning 100% means the rent stops entirely, you no longer need the housing association's permission for things like subletting, and you can usually sell on the open market rather than through the landlord's nomination process. If you staircase a house to 100%, you can often acquire the freehold too. Flats stay leasehold, and service charges continue at any ownership level — staircasing doesn't reduce them.",
+          "Whether it's worth it is a maths question: compare the rent you'd stop paying against the cost of borrowing to buy the remaining share, plus the transaction fees. When mortgage rates are higher than the effective rent rate on the unsold share (initial Shared Ownership rent is capped at 3% of the unsold share's value on new-model homes, and often set at 2.75%), staircasing can actually cost more per month than renting that share — the gain is equity and long-term security rather than immediate cash flow.",
+          "Also check your lease for caps: homes in some designated rural areas can't be staircased beyond 80%, so the full-ownership route may simply not be available. Clinkeys' view: staircase when you have a clear financial reason — a remortgage moment, rent reviews outpacing your mortgage rate, or plans to sell on the open market — rather than treating 100% as an automatic goal.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+    ],
+    faqs: [
+      {
+        q: "Does my rent go down when I staircase?",
+        a: "Yes. Rent is charged only on the share the housing association still owns, so it falls proportionally with every share you buy. If you staircase from 25% to 50%, the rent on the unsold share drops by a third (the unsold share shrinks from 75% to 50%). Buy 100% and rent stops entirely, though service charges on flats continue.",
+      },
+      {
+        q: "How many times can I staircase?",
+        a: "On newer leases (2021 model onwards) there's no limit — you can staircase in steps of 5% or more whenever you like, plus 1% a year via gradual staircasing for the first 15 years. Some older leases cap you at three staircasing transactions in total, so check your lease before planning several small steps.",
+      },
+      {
+        q: "Do I need a new mortgage to staircase?",
+        a: "Not necessarily. You can fund extra shares from savings, a further advance from your current lender, or by remortgaging. If you borrow, the lender will re-check affordability and your loan-to-value, and fees or a different rate may apply — a whole-of-market broker can compare a further advance against remortgaging.",
+      },
+      {
+        q: "Can I staircase if my home has gone up in value?",
+        a: "Yes, but each share costs more because it's priced at current market value, not your original purchase price. A 10% share of a home now worth £300,000 costs £30,000 even if you bought when it was worth £250,000. The reverse is also true — falling prices make staircasing cheaper.",
+      },
+    ],
+    relatedStageIds: [1, 5, 10],
+    publishDate: "2026-07-17",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {
