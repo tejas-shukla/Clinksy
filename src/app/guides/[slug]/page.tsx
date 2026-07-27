@@ -113,7 +113,7 @@ export default function GuidePage({ params }: { params: Params }) {
       author: { "@type": "Organization", name: "Clinkeys" },
       publisher: { "@type": "Organization", name: "Clinkeys", url: SITE_URL },
       image: `${SITE_URL}/guides/${stage.slug}/opengraph-image`,
-      datePublished: "2025-01-01",
+      datePublished: "2026-07-01",
       dateModified: new Date().toISOString().split("T")[0],
       mainEntityOfPage: {
         "@type": "WebPage",

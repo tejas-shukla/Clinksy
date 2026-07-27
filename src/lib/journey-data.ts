@@ -26,7 +26,7 @@ export const DASHBOARD_STAGES: DashboardStage[] = [
     id: 1,
     slug: "mortgage-in-principle-uk",
     title: "Work out how much you can borrow",
-    guideTitle: "How much can I borrow? Mortgage Agreement in Principle, UK 2025",
+    guideTitle: "How much can I borrow? Mortgage Agreement in Principle, UK 2026",
     metaDescription:
       "Before house hunting, get a free Mortgage Agreement in Principle. Here's how UK lenders work out what to lend you, and how to boost your chances.",
     blurb: "Get clear on what you can afford before you start hunting.",

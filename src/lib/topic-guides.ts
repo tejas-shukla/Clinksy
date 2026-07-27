@@ -29,10 +29,10 @@ export const TOPIC_GUIDES: TopicGuide[] = [
   {
     slug: "first-time-buyer-guide-uk",
     guideTitle:
-      "The complete UK first-time buyer guide (2025) — step by step",
+      "The complete UK first-time buyer guide (2026) — step by step",
     headline: "The complete UK first-time buyer guide",
     metaDescription:
-      "Everything you need to know about buying your first home in the UK. Mortgages, solicitors, surveys, stamp duty — one plain-English guide for 2025.",
+      "Everything you need to know about buying your first home in the UK. Mortgages, solicitors, surveys, stamp duty — one plain-English guide for 2026.",
     intro:
       "Buying your first home is one of the biggest financial decisions you'll ever make — and one of the most confusing. This guide walks you through the whole UK process in plain English, from getting a mortgage in principle to picking up the keys. You can read it end-to-end or jump to the stage you're at right now.",
     sections: [
@@ -124,7 +124,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
       },
     ],
     relatedStageIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    publishDate: "2025-01-01",
+    publishDate: "2026-07-01",
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -133,10 +133,10 @@ export const TOPIC_GUIDES: TopicGuide[] = [
   {
     slug: "cost-of-buying-a-house-uk",
     guideTitle:
-      "How much does it cost to buy a house in the UK? (2025 guide)",
+      "How much does it cost to buy a house in the UK? (2026 guide)",
     headline: "How much does it cost to buy a house in the UK?",
     metaDescription:
-      "A complete breakdown of the costs involved in buying a home in the UK — mortgage fees, conveyancing, surveys, Stamp Duty, and moving costs for 2025.",
+      "A complete breakdown of the costs involved in buying a home in the UK — mortgage fees, conveyancing, surveys, Stamp Duty, and moving costs for 2026.",
     intro:
       "The headline price of a property is only part of what you'll pay. On a typical UK first-time purchase, the fees, taxes, and professional costs add between 2% and 5% to your total spend. This guide breaks every cost down so there are no surprises on the day.",
     sections: [
@@ -235,7 +235,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
       },
     ],
     relatedStageIds: [1, 4, 5, 6, 7, 10],
-    publishDate: "2025-01-01",
+    publishDate: "2026-07-01",
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -244,7 +244,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
   {
     slug: "leasehold-vs-freehold-uk",
     guideTitle:
-      "Leasehold vs freehold in the UK — what buyers need to know (2025)",
+      "Leasehold vs freehold in the UK — what buyers need to know (2026)",
     headline: "Leasehold vs freehold: what UK buyers need to know",
     metaDescription:
       "The difference between leasehold and freehold, why it matters when buying a flat or house in the UK, and the key things to check before you make an offer.",
@@ -291,10 +291,11 @@ export const TOPIC_GUIDES: TopicGuide[] = [
         relatedStageIds: [5],
       },
       {
-        h2: "The leasehold reform picture for 2025",
+        h2: "The leasehold reform picture for 2026",
         paragraphs: [
-          "The Leasehold and Freehold Reform Act 2024 passed into law in May 2024. Key changes include: the abolition of the two-year qualifying period before you can extend your lease, a cap on ground rent for new leases at a 'peppercorn' (effectively £0), and changes to make it easier and cheaper to extend leases or buy the freehold collectively.",
-          "Some provisions are not yet in force and require secondary legislation, so the full benefit is still arriving. The direction of travel is clearly towards making leasehold fairer for buyers — but in the meantime, the checks above remain essential.",
+          "The Leasehold and Freehold Reform Act 2024 passed into law in May 2024, but it is being switched on in stages rather than all at once. Provisions covering rent charges, service charge disputes and the Building Safety Act came into force in July 2024. On 31 January 2025, section 27 abolished the two-year qualifying period, so you no longer have to own a flat for two years before extending your lease or buying the freehold. Further changes to right to manage disputes followed on 3 March 2025.",
+          "The bigger valuation reforms — including the abolition of marriage value on short leases, which is what makes extending a lease under 80 years so expensive — still require secondary legislation and are expected across 2026 and 2027. As of 2026 they are not yet in force.",
+          "What that means in practice: don't buy a short-lease flat on the assumption the cheaper valuation rules will be in place by the time you extend. Price the extension under today's rules, and treat any future saving as a bonus rather than a plan. The checks above remain essential.",
         ],
       },
     ],
@@ -317,7 +318,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
       },
     ],
     relatedStageIds: [2, 5],
-    publishDate: "2025-01-01",
+    publishDate: "2026-07-01",
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -326,7 +327,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
   {
     slug: "what-is-conveyancing-uk",
     guideTitle:
-      "What is conveyancing? A UK buyer's plain-English guide (2025)",
+      "What is conveyancing? A UK buyer's plain-English guide (2026)",
     headline: "What is conveyancing? A UK buyer's plain-English guide",
     metaDescription:
       "Conveyancing is the legal process of transferring property ownership. Here's what UK solicitors actually do, how long it takes, and how to choose the right one.",
@@ -406,7 +407,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
       },
     ],
     relatedStageIds: [5, 8, 9],
-    publishDate: "2025-01-01",
+    publishDate: "2026-07-01",
   },
 
   // ──────────────────────────────────────────────────────────────────────
@@ -415,7 +416,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
   {
     slug: "how-long-does-buying-a-house-take-uk",
     guideTitle:
-      "How long does buying a house take in the UK? (2025 timeline)",
+      "How long does buying a house take in the UK? (2026 timeline)",
     headline: "How long does buying a house take in the UK?",
     metaDescription:
       "From mortgage in principle to picking up the keys, here's the realistic UK home buying timeline — phase by phase — and what slows things down.",
@@ -499,7 +500,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
       },
     ],
     relatedStageIds: [1, 2, 3, 4, 5, 8, 9, 10],
-    publishDate: "2025-01-01",
+    publishDate: "2026-07-01",
   },
 
   // ──────────────────────────────────────────────────────────────────────
