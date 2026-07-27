@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Get started with Clinkeys",
   description:
     "Clinkeys guides first-time UK buyers through every step of buying a home. The personalised journey is coming soon — join the list and start with our free guides today.",
+  alternates: { canonical: "/start" },
 };
 
 export default function StartPage() {

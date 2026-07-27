@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Get matched with the right professional",
   description:
     "Tell us about your purchase and we'll match you with a mortgage advisor, solicitor or surveyor who fits — verified, available, and right for your situation.",
+  alternates: { canonical: "/match" },
 };
 
 export const dynamic = "force-dynamic";

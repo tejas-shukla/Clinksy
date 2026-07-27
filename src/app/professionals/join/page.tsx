@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Join Clinkeys as a professional",
   description:
     "Mortgage advisors, solicitors and surveyors: join Clinkeys and receive matched client requests — no directories, no bidding, just buyers who fit your expertise.",
+  alternates: { canonical: "/professionals/join" },
 };
 
 export default function ProfessionalsJoinPage() {

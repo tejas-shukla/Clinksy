@@ -17,10 +17,14 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://clinkeys.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
+  // Absolute base for canonicals, og:image etc. Must never fall back to
+  // localhost in a deployed build — a localhost canonical or share image is
+  // worse than none. Mirrors the default in robots.ts / sitemap.ts.
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Clinkeys — Buying your first home, without the panic.",
     template: "%s · Clinkeys",
@@ -41,9 +45,6 @@ export const metadata: Metadata = {
       "Plain-English UK home buying guides, real costs, and the right professional matched at the right time.",
   },
 };
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://clinkeys.com";
 
 // Entity structured data — helps Google's Knowledge Graph and AI engines
 // (ChatGPT, Gemini, Perplexity) understand what Clinkeys is.
