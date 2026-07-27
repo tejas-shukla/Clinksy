@@ -6,8 +6,15 @@ import { ACCEPT_WINDOW_HOURS } from "./criteria";
 
 const FROM = "Clinkeys <hello@clinkeys.com>";
 
+// Links in emails must be absolute and publicly reachable. Prefer the explicit
+// setting, then Vercel's production domain, and only fall back to localhost in
+// local dev — a localhost link in a sent email is useless to the recipient.
 function siteUrl(): string {
-  return (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:4001").replace(/\/$/, "");
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return explicit.replace(/\/$/, "");
+  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (vercel) return `https://${vercel}`.replace(/\/$/, "");
+  return "http://localhost:4001";
 }
 
 async function send(to: string, subject: string, text: string) {
