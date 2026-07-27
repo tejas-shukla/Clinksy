@@ -1451,6 +1451,256 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [1, 4],
     publishDate: "2026-07-27",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 17. PROPERTY CHAINS
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "property-chain-uk",
+    guideTitle: "Property chains explained: how they work & why they break",
+    headline: "Property chains, and how to stop one breaking yours",
+    metaDescription:
+      "A property chain links buyers and sellers whose moves all depend on each other. How chains work, why they collapse, and how first-time buyers can use their position.",
+    intro:
+      "A property chain is a sequence of linked purchases where each sale depends on the one before it completing. If any single transaction in the chain fails, everything behind it stalls — which is why roughly a third of sales that fall through do so because of someone else's problem, not the buyer's or seller's own. As a first-time buyer you are 'chain-free' at the bottom of the chain, and that is a genuine negotiating asset that many buyers forget to use.",
+    sections: [
+      {
+        h2: "What a property chain actually is",
+        paragraphs: [
+          "Most people buying a home are also selling one, and they need the money from their sale to fund their purchase. That links the two transactions together. Extend that logic and you get a chain: a first-time buyer buys from someone who is buying from someone who is buying from someone, and so on until you reach a seller who isn't buying anything (or is buying with cash).",
+          "Every link has to exchange contracts on the same day. That's the part people find surprising — the whole chain exchanges simultaneously, because no one can commit to selling until they're certain they can buy. Completion then usually happens together too, which is why moving day involves so much choreography.",
+          "The practical consequence is that your purchase is only as reliable as the weakest transaction in the chain, even if that transaction is four links away and involves people you'll never meet.",
+        ],
+        relatedStageIds: [3, 8],
+      },
+      {
+        h2: "Why chains break",
+        paragraphs: [
+          "Chains rarely collapse because of malice. They collapse because any one of a dozen ordinary problems hits any one of the parties, and there's no slack in the system to absorb it.",
+        ],
+        bullets: [
+          "A mortgage application is declined, or the lender down-values the property so the buyer can't cover the gap",
+          "A survey uncovers something serious — subsidence, damp, an unsafe roof — and the buyer renegotiates or walks",
+          "A legal problem surfaces: a missing building regulations certificate, a boundary dispute, a short lease",
+          "Someone gets gazumped, or changes their mind, or has a job or relationship change",
+          "One party simply drags their feet, and another loses patience or their mortgage offer expires",
+        ],
+        relatedStageIds: [4, 6],
+      },
+      {
+        h2: "Your advantage as a first-time buyer",
+        paragraphs: [
+          "You have no property to sell, so you're chain-free. Nothing behind you can fail. For a seller, that removes an entire category of risk — and sellers regularly accept a lower offer from a chain-free buyer over a higher one from someone stuck in a long chain, because certainty is worth real money to them.",
+          "Say it explicitly. Don't assume the estate agent has communicated it: when you make an offer, state that you're a first-time buyer with no chain, that you have a mortgage in principle, and how quickly you can proceed. That combination is what makes an offer attractive beyond its number.",
+          "It's worth even more on a property that's been on the market a while, or where a previous sale has already fallen through. A seller who has been let down once will weight reliability heavily.",
+        ],
+        relatedStageIds: [1, 3],
+      },
+      {
+        h2: "Questions to ask before you offer",
+        paragraphs: [
+          "Before committing to a purchase, find out what you're actually joining. The estate agent should tell you, and a straight refusal to answer is itself informative.",
+        ],
+        bullets: [
+          "Is the seller buying onward, and have they found somewhere yet?",
+          "How many links are in the chain in total, and how far along is each one?",
+          "Has anyone in the chain already had a sale fall through?",
+          "Is anyone in the chain a cash buyer or chain-free?",
+          "Are there fixed deadlines — a job relocation, a school term, a lease expiry — driving anyone's timing?",
+        ],
+        relatedStageIds: [2, 3],
+      },
+      {
+        h2: "Keeping a chain together",
+        paragraphs: [
+          "You can't control other people's transactions, but you can make sure you're never the weak link — and the party who moves fastest often drags the chain along behind them. Get your mortgage application in immediately after your offer is accepted, instruct a solicitor before you need one, book your survey the same week, and answer every legal enquiry the day it arrives.",
+          "Communication matters more than people expect. Ask your solicitor and the estate agent for a weekly update on the whole chain, not just your part of it. Problems that surface early can usually be solved; the same problem discovered a week before a planned exchange often kills the deal.",
+          "If the chain does break above you, don't assume it's over. Sometimes the seller can find a different onward purchase, or move into rented accommodation to keep your purchase alive — particularly if they know you're reliable and ready. And consider home buyer protection insurance, typically around £50 to £100, which reimburses some of your survey, search and legal costs if the purchase collapses through no fault of yours.",
+        ],
+        relatedStageIds: [5, 8],
+      },
+    ],
+    faqs: [
+      {
+        q: "What does 'no onward chain' mean?",
+        a: "It means the seller isn't buying another property as part of the same transaction — typically because the home is empty, is an inherited or investment property, or they've already moved. There's nothing above them to delay the sale, which usually makes for a faster, lower-risk purchase.",
+      },
+      {
+        q: "How long does a chain add to a purchase?",
+        a: "A chain-free purchase often completes in 8 to 12 weeks. Each additional link tends to add time, because the chain moves at the speed of its slowest member, and long chains can run to six months or more. The number of links matters less than whether any one party is stuck.",
+      },
+      {
+        q: "What happens if the chain breaks?",
+        a: "Everything behind the break stalls. If it happens before exchange, no one is legally committed, so parties can renegotiate, find a replacement buyer or seller, or withdraw — but any money already spent on surveys, searches and mortgage fees is usually lost. After exchange, contracts are binding and pulling out carries serious financial penalties.",
+      },
+      {
+        q: "Are first-time buyers really more attractive to sellers?",
+        a: "Often, yes. Being chain-free means there's no sale beneath you that can collapse and take the purchase down with it. Combined with a mortgage in principle and a readiness to move quickly, that certainty can win you a property over a higher offer from a buyer in a long chain.",
+      },
+    ],
+    relatedStageIds: [2, 3, 8, 9],
+    publishDate: "2026-07-27",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 18. BUYING A HOUSE IN SCOTLAND
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "buying-a-house-in-scotland",
+    guideTitle: "Buying a house in Scotland: how the process differs (2026)",
+    headline: "Buying in Scotland is a different process — here's how",
+    metaDescription:
+      "Scotland's home buying process differs from England: Home Reports, offers over, binding missives and LBTT instead of Stamp Duty. A first-time buyer's guide.",
+    intro:
+      "Buying a home in Scotland follows a genuinely different legal process from England, Wales and Northern Ireland — not just different terminology. The seller provides a survey up front in the Home Report, offers are submitted through a solicitor rather than negotiated with an estate agent, the deal becomes legally binding much earlier through missives, and you pay Land and Buildings Transaction Tax rather than Stamp Duty. The upshot is a process that's usually faster and far less prone to gazumping, but which asks you to be mortgage-ready before you offer.",
+    sections: [
+      {
+        h2: "The Home Report: a survey you don't pay for",
+        paragraphs: [
+          "In Scotland the seller must provide a Home Report before marketing the property, and any interested buyer can request it free of charge. It contains three parts: a single survey with a valuation and a condition assessment, an Energy Performance Certificate, and a property questionnaire covering things like council tax band, parking and any history of flooding.",
+          "This flips the English model, where each prospective buyer pays for their own survey and only after their offer is accepted. In Scotland you can read a professional assessment of the property's condition and value before you commit a penny — a significant advantage.",
+          "The catch is that the survey is commissioned by the seller. Most lenders accept the Home Report valuation, but if you have concerns about a specific issue it flags — or the property is unusual — you can still commission your own more detailed survey.",
+        ],
+        relatedStageIds: [2, 6],
+      },
+      {
+        h2: "'Offers over' and closing dates",
+        paragraphs: [
+          "Scottish properties are often marketed at 'offers over' a stated figure, which is a starting point rather than an asking price. In a competitive market the sale price can land well above it, so treat the Home Report valuation — not the offers-over figure — as your guide to what the property is actually worth.",
+          "When several parties are interested, the selling agent sets a closing date: a deadline by which all interested buyers submit their best single offer, blind, with no opportunity to improve it afterwards. It's effectively a sealed-bid auction, and you won't know what anyone else has offered.",
+          "This makes preparation critical. You need your mortgage arranged and your solicitor instructed before the closing date, because an offer is submitted formally by your solicitor and is taken seriously the moment it's made. Deciding what the property is worth to you in advance — and holding that line — matters more here than almost anywhere else in the process.",
+        ],
+        relatedStageIds: [1, 3],
+      },
+      {
+        h2: "Missives: when the deal becomes binding",
+        paragraphs: [
+          "This is the single biggest difference from England. In Scotland, your solicitor and the seller's solicitor exchange formal letters called missives. Once these are concluded, you have a legally binding contract — the seller cannot accept a higher offer, and you cannot walk away without serious financial consequences.",
+          "Missives typically conclude far earlier in the process than exchange of contracts does in England, where the sale stays non-binding for the 8 to 12 weeks between offer acceptance and exchange. That long window of uncertainty is what makes gazumping possible in England — and why it is rare in Scotland.",
+          "Because commitment comes early, get everything settled before missives conclude. Your solicitor will negotiate the conditions within the missives, and any concerns about the property's condition, what's included in the sale, or your date of entry need resolving at that stage rather than afterwards.",
+        ],
+        relatedStageIds: [3, 5, 8],
+      },
+      {
+        h2: "LBTT instead of Stamp Duty",
+        paragraphs: [
+          "Scotland has its own property tax: Land and Buildings Transaction Tax, collected by Revenue Scotland rather than HMRC. The thresholds are different from Stamp Duty in England, and generally kick in at lower prices.",
+          "First-time buyer relief in Scotland raises the nil-rate threshold to £175,000, against a standard nil-rate band of £145,000 — worth up to £600. Above £175,000 you pay 2% on the portion up to £250,000, with higher bands above that. If you'll own more than one property, the Additional Dwelling Supplement applies on top.",
+          "Your solicitor files the LBTT return and claims first-time buyer relief on your behalf, and it must be submitted to Revenue Scotland within 30 days of settlement. Budget for the tax as cash on completion — it can't be added to your mortgage.",
+        ],
+        relatedStageIds: [10],
+      },
+      {
+        h2: "Timings, terminology and costs",
+        paragraphs: [
+          "The Scottish process is typically quicker: around 6 to 8 weeks from offer acceptance to moving in, against 8 to 12 weeks or more in England, largely because the survey is already done and the legal commitment comes earlier.",
+          "The vocabulary differs too, which can make English guides confusing. 'Settlement' is what England calls completion. 'Date of entry' is the agreed day you get the keys. 'Disposition' is the deed transferring ownership, registered with Registers of Scotland rather than HM Land Registry.",
+          "On costs, budget for solicitor fees of roughly £1,000 to £1,500, LBTT if applicable, your mortgage deposit, and any additional survey you choose to commission. You save the cost of a standard survey thanks to the Home Report — one of the few areas where buying in Scotland is straightforwardly cheaper.",
+        ],
+        relatedStageIds: [5, 9, 10],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can you be gazumped in Scotland?",
+        a: "It's rare. Once missives are concluded the contract is legally binding, and that happens much earlier than exchange does in England. Scottish solicitors' professional rules also generally prevent them acting for a seller trying to accept a rival offer after accepting one. There is a window before missives conclude where it's technically possible, but it's uncommon.",
+      },
+      {
+        q: "Do I need my own survey in Scotland?",
+        a: "Usually not. The seller must provide a Home Report containing a single survey and valuation, free to interested buyers, and most lenders accept its valuation. You can commission your own more detailed survey if the Home Report raises concerns or the property is unusual, but many buyers don't need to.",
+      },
+      {
+        q: "What does 'offers over' mean in Scotland?",
+        a: "It's a marketing figure inviting offers above that amount, not an asking price. Properties frequently sell for more, sometimes substantially. Use the valuation in the Home Report rather than the offers-over figure to judge what the property is genuinely worth before deciding your bid.",
+      },
+      {
+        q: "How much LBTT does a first-time buyer pay in Scotland?",
+        a: "First-time buyer relief lifts the nil-rate threshold to £175,000, compared with the standard £145,000 — a saving of up to £600. Above £175,000 you pay 2% on the portion up to £250,000, with higher rates on amounts above that. Your solicitor files the return with Revenue Scotland within 30 days of settlement.",
+      },
+    ],
+    relatedStageIds: [2, 3, 5, 10],
+    publishDate: "2026-07-27",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 19. BUYING A NEW BUILD
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "buying-a-new-build-uk",
+    guideTitle: "Buying a new build home in the UK (2026): what to watch for",
+    headline: "Buying a new build: the parts nobody warns you about",
+    metaDescription:
+      "Reservation fees, snagging lists, NHBC warranties and mortgage offer expiry. What's different about buying a new build in the UK, and how to protect yourself.",
+    intro:
+      "Buying a new build runs on a different set of rules from buying an existing home. You reserve a plot rather than make an offer, you're buying from a developer's sales team rather than negotiating with an owner, and the property may not exist yet. That creates two specific risks worth planning around: the build finishing later than your mortgage offer lasts, and a long list of small defects — snags — that are far easier to get fixed before you complete than after.",
+    sections: [
+      {
+        h2: "Reserving a plot",
+        paragraphs: [
+          "Instead of making an offer, you pay a reservation fee to take a specific plot off the market — typically £500 to £2,000, usually deducted from the purchase price at completion. The reservation agreement commonly runs for around 42 days: a short cooling-off period followed by a window in which you're expected to exchange contracts.",
+          "Read what happens to that fee if things go wrong. Some is often non-refundable if you withdraw, but you should be entitled to a refund in defined circumstances — check the agreement rather than the sales pitch, and have your solicitor look at it before you pay.",
+          "Developers often prefer their recommended solicitor and mortgage broker, and there may be an incentive attached to using them. You are not obliged to. A conveyancer experienced in new builds is genuinely valuable, but they should be working for you, not for the developer's timetable.",
+        ],
+        relatedStageIds: [3, 5],
+      },
+      {
+        h2: "The mortgage offer expiry trap",
+        paragraphs: [
+          "This is the single most common way new build purchases go wrong. Mortgage offers are typically valid for six months. If you're buying off-plan and construction runs late — which is normal rather than exceptional — your offer can expire before the home is ready, and you have to reapply.",
+          "Reapplying isn't a formality. Rates may have moved, your circumstances may have changed, and lending criteria may have tightened. In the worst case you no longer qualify for the loan you were relying on, having already committed a reservation fee and legal costs.",
+          "Protect yourself by asking the developer for a realistic completion window in writing rather than an optimistic one, looking for lenders offering longer new-build offer validity, and building in contingency. If you're buying off-plan, treat the developer's estimated date as a best case.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "Snagging: your leverage is before completion",
+        paragraphs: [
+          "A snagging list records everything wrong with the finished home — misaligned doors, cracked plaster, poor paintwork, damaged units, faulty seals, drainage that doesn't drain. Almost every new build has snags; the question is how many and how quickly they get fixed.",
+          "Inspect thoroughly before completion if you're allowed to, and photograph every room. Many buyers pay for a professional snagging survey, which typically finds far more than an untrained eye and gives you a documented list the developer takes seriously. Submit your list in writing, promptly — within the first week or two of moving in at the latest.",
+          "Your leverage is highest before you complete. Once you've handed over the money and moved in, you're relying on the developer's goodwill and process to come back and fix things, which can take months. Anything you can get resolved pre-completion, get resolved pre-completion.",
+        ],
+        relatedStageIds: [6, 9],
+      },
+      {
+        h2: "What the warranty actually covers",
+        paragraphs: [
+          "Most new builds come with a 10-year structural warranty — NHBC Buildmark is the most common, though there are alternatives. The developer pays for it as part of the build, so it isn't a separate cost to you, but understanding its shape matters because cover narrows sharply over time.",
+          "In broad terms it works in two phases. For roughly the first two years, the builder is contractually responsible for putting right defects you report in writing — this is where the bulk of ordinary snags fall. From around year three to year ten, cover typically drops back to major structural defects only: foundations, load-bearing walls, the roof.",
+          "The practical implication: things like cracked plaster, poor finishes and misaligned doors are a year-one and year-two matter. Report them in writing while the builder is still on the hook, keep copies of everything, and don't let a defect drift past the point where it's covered.",
+        ],
+        relatedStageIds: [7],
+      },
+      {
+        h2: "Incentives, valuations and the resale question",
+        paragraphs: [
+          "Developers frequently offer incentives rather than discounts — help with your deposit, stamp duty paid, upgraded kitchens or flooring, or a part-exchange on your current home. These have real value, but they must be disclosed to your lender, because they affect the true price and therefore the valuation.",
+          "Be alert to down-valuations. A surveyor may value the property below the price you agreed, especially where heavy incentives are involved, leaving you to cover the shortfall in cash. Ask what similar plots on the development have actually sold for, not what they're listed at.",
+          "Finally, consider resale. New builds can carry a premium in the same way a new car does, and if you sell within a few years you may be competing against the developer still selling later phases of the same site at full price with fresh incentives. If you might move again soon, factor that in.",
+        ],
+        relatedStageIds: [2, 6],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a survey on a new build?",
+        a: "You don't need a traditional condition survey, since the property is new and comes with a structural warranty, but a professional snagging survey is well worth it. It produces a documented list of defects for the developer while your leverage is highest — before completion or in the first weeks afterwards.",
+      },
+      {
+        q: "What is a snagging list?",
+        a: "A written list of defects and unfinished work in a new build — poor finishes, damaged fittings, misaligned doors, cracks, drainage faults. You submit it to the developer, ideally before completion or within the first week or two after moving in, and they're responsible for putting the items right.",
+      },
+      {
+        q: "What happens if my new build is delayed past my mortgage offer?",
+        a: "You'll usually need to apply again, and the new offer is subject to current rates and criteria rather than the ones you originally secured. This is the most common problem with off-plan purchases. Ask for realistic timescales in writing, and look for lenders offering extended offer validity on new builds.",
+      },
+      {
+        q: "How long is a new build warranty?",
+        a: "Typically 10 years. For roughly the first two years the builder is responsible for fixing defects you report in writing; from around year three to year ten, cover is generally limited to major structural problems such as foundations, load-bearing walls and the roof.",
+      },
+    ],
+    relatedStageIds: [1, 4, 6, 9],
+    publishDate: "2026-07-27",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {
