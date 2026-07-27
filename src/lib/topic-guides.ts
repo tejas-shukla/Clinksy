@@ -1263,6 +1263,194 @@ export const TOPIC_GUIDES: TopicGuide[] = [
     relatedStageIds: [1, 5, 10],
     publishDate: "2026-07-17",
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 15. HOW MUCH DEPOSIT DO I NEED
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "how-much-deposit-to-buy-a-house-uk",
+    guideTitle: "How much deposit do I need to buy a house? (UK, 2026)",
+    headline: "How much deposit do you actually need?",
+    metaDescription:
+      "The minimum UK house deposit is 5%, but 10% or more gets you a better rate. Average deposits by region, what each LTV band costs, and how to get there faster.",
+    intro:
+      "The minimum deposit for most UK mortgages is 5% of the purchase price, and 95% mortgages are widely available in 2026 — the government's Mortgage Guarantee Scheme, now a permanent fixture, exists specifically to keep them on the market. But minimum and optimal are different things. Every step up in deposit — 5% to 10%, 10% to 15%, 15% to 25% — unlocks a cheaper interest rate, because lenders price by loan-to-value. On a £250,000 home, 5% is £12,500 and 10% is £25,000, and that second £12,500 typically pays for itself in reduced interest.",
+    sections: [
+      {
+        h2: "The minimum: 5% deposit",
+        paragraphs: [
+          "A 5% deposit gets you a 95% loan-to-value (LTV) mortgage — you borrow 95% of the price. These products exist across the market, supported by the Mortgage Guarantee Scheme, under which the government underwrites part of the lender's risk on high-LTV lending. The Chancellor has confirmed the scheme as a permanent feature rather than a temporary support, which means 95% mortgages should remain available rather than vanishing in the next downturn as they did in 2008 and 2020.",
+          "The catch is cost. At 95% LTV you are the riskiest kind of borrower from the lender's point of view, so you pay the highest rates on the shelf. You'll also face tighter criteria: a cleaner credit file, more scrutiny of your spending, and in some cases a cap on how many times your income you can borrow.",
+          "A 5% deposit also gives you no equity buffer. If prices fall 5%, you're in negative equity — owing more than the home is worth — which makes remortgaging or moving very difficult until prices recover or you've paid down the balance.",
+        ],
+        bullets: [
+          "5% of £200,000 = £10,000",
+          "5% of £250,000 = £12,500",
+          "5% of £300,000 = £15,000",
+          "5% of £350,000 = £17,500",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "Why 10% is the deposit that changes things",
+        paragraphs: [
+          "The jump from 5% to 10% is the single most valuable move most first-time buyers can make. Lenders price in LTV bands, and 90% is where the pricing starts to improve meaningfully — as a benchmark in mid-2026, the best first-time buyer two-year fixes sit around 4.67% at 90% LTV, against roughly 4.4% to 4.5% once you have a 15% to 25% deposit.",
+          "That gap looks small as a percentage and large as a monthly payment. Over a 25 or 30 year term, a fraction of a percent compounds into thousands of pounds. If you are three or four months of saving away from 10%, it is almost always worth waiting — provided prices in your area aren't rising faster than you can save, which is the one scenario where waiting costs you more than it saves.",
+          "Beyond 25% deposit, the rate improvements flatten out. There's no strong rate argument for stretching to 40% if that money would be better kept as an emergency fund.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "What people actually put down",
+        paragraphs: [
+          "The legal minimum and the typical reality are far apart. According to UK Finance data, the average first-time buyer deposit in England is around £63,855 — far more than 5% of a typical first home, because buyers save as much as they can rather than the least they can get away with.",
+          "Regional variation is enormous, driven by house prices rather than saving habits:",
+        ],
+        bullets: [
+          "England — around £63,855",
+          "Northern Ireland — around £40,528",
+          "Wales — around £35,572",
+          "Scotland — around £30,551",
+        ],
+        relatedStageIds: [1, 2],
+      },
+      {
+        h2: "Your deposit isn't the only cash you need",
+        paragraphs: [
+          "This is where first-time buyer budgets most often break. The deposit is the biggest number, but it is not the whole number, and the additional costs are due at different points in the process — some before you've even exchanged.",
+          "Budget separately for the buying costs on top of your deposit, and keep them in cash rather than counting them as part of it:",
+        ],
+        bullets: [
+          "Conveyancing — typically £1,000 to £2,000 including searches",
+          "Survey — from a few hundred pounds for a Level 1 up to £1,000+ for a Level 3 building survey",
+          "Mortgage arrangement fee — often £1,000 or so, sometimes addable to the loan",
+          "Stamp Duty — nothing for most first-time buyers in England and Northern Ireland up to £300,000, but Scotland and Wales differ",
+          "Removals, and any immediate furniture or repairs",
+        ],
+        relatedStageIds: [5, 6, 10],
+      },
+      {
+        h2: "Getting to your deposit faster",
+        paragraphs: [
+          "The Lifetime ISA is the most powerful tool available to most first-time buyers: pay in up to £4,000 a year and the government adds 25% on top, so the maximum bonus is £1,000 a year. The property you buy must cost £450,000 or less, and you must have held the account at least 12 months before you can use it for a purchase — so open one early even if you only put in a token amount, because that starts the clock.",
+          "A gifted deposit from family is common and entirely acceptable to lenders, provided it's a genuine gift rather than a loan. Your lender will want a gift letter confirming the giver has no stake in the property and no expectation of repayment, and will usually want the funds to have sat in your account for around 30 days before completion.",
+          "If you're buying a new build, ask about Deposit Unlock, a scheme backed by housebuilders that allows a 5% deposit on new-build homes where standard 95% lending is harder to obtain.",
+        ],
+        relatedStageIds: [1],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I buy a house with a 5% deposit in the UK?",
+        a: "Yes. 95% loan-to-value mortgages are widely available in 2026 and are supported by the government's Mortgage Guarantee Scheme, which has been made permanent. You'll pay a higher interest rate than with a 10% or 15% deposit, and criteria are stricter, so if you can save a little more before applying it usually reduces your monthly cost noticeably.",
+      },
+      {
+        q: "Is it worth waiting to save a 10% deposit instead of 5%?",
+        a: "Usually yes, if it's a matter of months rather than years. The move from 95% to 90% loan-to-value is where mortgage pricing improves most sharply, and the saving compounds over the full mortgage term. The exception is a fast-rising local market, where the price increase can outpace what you save.",
+      },
+      {
+        q: "Does the deposit include my solicitor and survey fees?",
+        a: "No. Your deposit goes towards the purchase price of the property. Conveyancing, searches, survey, mortgage fees, Stamp Duty and removals are all separate and mostly payable before or on completion, so budget for them in addition to your deposit — commonly a few thousand pounds in total.",
+      },
+      {
+        q: "Can my parents give me the deposit?",
+        a: "Yes, gifted deposits are common and accepted by lenders. The money must be a genuine gift, not a loan, and the person giving it must confirm in a gift letter that they retain no interest in the property and expect no repayment. Lenders typically want the funds in your account roughly 30 days before completion and will check their source.",
+      },
+    ],
+    relatedStageIds: [1, 2, 10],
+    publishDate: "2026-07-27",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  // 16. MORTGAGE BROKER VS BANK
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "mortgage-broker-vs-bank-uk",
+    guideTitle: "Mortgage broker vs bank: which is better? (UK, 2026)",
+    headline: "Mortgage broker or straight to the bank?",
+    metaDescription:
+      "Should you use a mortgage broker or go direct to your bank? Broker fees in 2026, what whole-of-market really means, and when going direct genuinely makes sense.",
+    intro:
+      "Go direct to a bank and you see one lender's products. Use a whole-of-market broker and you see most of the market, including lenders that don't sell direct to the public at all. For a straightforward salaried buyer with a big deposit and a clean credit file, going direct to your own bank can work perfectly well. For almost everyone else — self-employed, contractor, smaller deposit, any credit blemish, unusual property — a broker typically finds both a better rate and, more importantly, a lender who will actually say yes.",
+    sections: [
+      {
+        h2: "The three types of mortgage seller",
+        paragraphs: [
+          "Not everyone offering you a mortgage has the same view of the market, and the label matters more than the branding suggests. Under FCA rules, firms must tell you which category they fall into — ask directly, and get the answer in writing.",
+        ],
+        bullets: [
+          "Whole-of-market broker — can recommend from across the market, not a restricted list. This gives the widest genuine choice.",
+          "Panel or restricted broker — advises only from a limited set of lenders they have arrangements with. Still useful, but you're seeing a subset.",
+          "Direct to lender — a bank or building society selling only its own products. Their adviser cannot tell you a rival's deal is better, even when it is.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "What a broker costs in 2026",
+        paragraphs: [
+          "Broker fees have risen sharply. Research published in 2026 puts the average mortgage broker fee for a purchase at around £643, up roughly 29% year on year, with most buyers paying between £500 and £700 and £500 the single most common figure.",
+          "Fee structures vary, and it's worth knowing which you're being offered before you commit: fixed fees are the most common (around 44% of brokers), followed by fees based on the loan amount (29%), a percentage of the property value (18%), and split fees paid in stages (7%). A percentage-of-property-value fee on an expensive home can be dramatically more than a flat fee for the same work.",
+          "Crucially, plenty of brokers charge you nothing. Fee-free brokers are paid a commission by the lender instead — and research suggests around 31% of buyers who paid a fee did so without realising that fee-free brokers can have exactly the same access to lenders and products. Being fee-free doesn't mean a narrower market; always ask.",
+        ],
+        relatedStageIds: [1],
+      },
+      {
+        h2: "When a broker is clearly worth it",
+        paragraphs: [
+          "The value of a broker rises steeply the further you sit from the 'standard' borrower profile. Lender criteria differ enormously in ways that aren't published, and a good broker's real product is knowing which lender treats your specific situation kindly — which saves you from collecting declined applications, each of which leaves a mark on your credit file.",
+          "Strong reasons to use a broker:",
+        ],
+        bullets: [
+          "You're self-employed, a contractor or a company director — lenders assess income wildly differently here",
+          "Your deposit is 10% or less, where product choice and criteria get tighter",
+          "You've had any credit issues — missed payments, defaults, a CCJ",
+          "Your income includes bonus, commission, or multiple part-time jobs",
+          "The property is unusual — non-standard construction, a flat above a shop, a short lease, ex-local authority",
+          "You're using a scheme such as Shared Ownership, which not all lenders support",
+          "You simply want someone to chase the application and handle the paperwork",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "When going direct genuinely makes sense",
+        paragraphs: [
+          "Broker advocates rarely say this, but direct can be the right answer. If you're employed on a straightforward salary, have a 20%+ deposit, a clean credit file and you're buying an ordinary house, most lenders will want your business and the rate differences at that LTV are modest.",
+          "Your own bank may also offer existing-customer deals that aren't visible to brokers, and some lenders keep certain products direct-only. The sensible approach isn't to pick a side — it's to get a broker's recommendation and check your own bank's direct offer, then compare the total cost, not just the headline rate.",
+          "One warning: if you go direct and the bank offers 'execution-only' — no advice, you choose the product yourself — you give up the protection that comes with a recommendation. With advised sales, if the product turns out to be unsuitable you have recourse to the Financial Ombudsman Service. Choosing for yourself, you don't.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+      {
+        h2: "Comparing on total cost, not headline rate",
+        paragraphs: [
+          "The advertised interest rate is not the price of a mortgage. A deal at a slightly lower rate with a £1,500 arrangement fee can easily cost more over a two-year fix than a marginally higher rate with no fee, particularly on a smaller loan where the fee is spread across less borrowing.",
+          "Ask any broker or bank to show you the total cost over the initial deal period — rate, arrangement fee, valuation fee, any cashback, and the broker fee if there is one. That single number is what you should be comparing. A broker who won't produce it on request is one to be wary of.",
+          "Finally, check what happens at the end of the deal. When your fixed period ends you'll roll onto the lender's standard variable rate, which is usually much higher, so factor in the cost and hassle of remortgaging — and whether the product carries early repayment charges if your circumstances change before then.",
+        ],
+        relatedStageIds: [1, 4],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a mortgage broker worth the fee?",
+        a: "Often, yes — but it depends on your situation. If you're self-employed, have a small deposit or any credit issues, a broker's knowledge of which lenders accept your circumstances can be the difference between approval and repeated rejections. If you're a salaried buyer with a 20%+ deposit and clean credit, the benefit is smaller. Note that many good brokers are fee-free, paid by the lender instead.",
+      },
+      {
+        q: "How much does a mortgage broker charge in the UK?",
+        a: "Research in 2026 puts the average purchase fee at around £643, with most buyers paying £500 to £700. Fees may be a flat amount, a percentage of the loan, or a percentage of the property value — the last of which can be very expensive on a pricier home. Many brokers charge nothing and take a commission from the lender instead.",
+      },
+      {
+        q: "Do brokers get better mortgage rates than banks?",
+        a: "Sometimes, though not always on rate alone. A broker's bigger advantage is breadth: access to lenders that don't sell direct, and knowledge of which lenders' criteria fit your circumstances. Some banks do keep direct-only deals for existing customers, so comparing a broker's recommendation against your own bank's offer is sensible.",
+      },
+      {
+        q: "What does whole-of-market mean?",
+        a: "A whole-of-market broker can recommend products from across the mortgage market rather than a restricted panel of lenders. It doesn't guarantee they consider literally every product, but it's a far wider view than a panel broker or a bank selling only its own range. Ask any adviser to confirm in writing which category they fall into.",
+      },
+    ],
+    relatedStageIds: [1, 4],
+    publishDate: "2026-07-27",
+  },
 ];
 
 export function topicGuideBySlug(slug: string): TopicGuide | undefined {
