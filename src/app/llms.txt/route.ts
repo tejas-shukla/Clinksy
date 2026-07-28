@@ -38,6 +38,12 @@ export function GET() {
   );
   lines.push("");
 
+  lines.push("## Tools");
+  lines.push(
+    `- [Stamp Duty calculator](${SITE_URL}/stamp-duty-calculator): free calculator for UK property transaction tax — SDLT (England & Northern Ireland), LBTT (Scotland) and LTT (Wales) — with first-time buyer relief applied automatically and a full band-by-band breakdown.`,
+  );
+  lines.push("");
+
   // Deep-dive topic guides (strongest, most citable content first).
   lines.push("## In-depth guides");
   for (const g of TOPIC_GUIDES) {
